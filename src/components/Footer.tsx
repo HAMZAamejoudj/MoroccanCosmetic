@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useTranslations } from "@/i18n/useTranslations";
+import { useLanguage } from "@/context/LanguageContext";
 import { businessFacts } from "@/config/businessFacts";
 import { getWhatsAppUrl, siteConfig } from "@/config/siteConfig";
 import { siteImages } from "@/config/siteImages";
@@ -64,6 +65,7 @@ function FooterHeading({ children }: { children: React.ReactNode }) {
 
 export default function Footer() {
   const t = useTranslations("home");
+  const { language } = useLanguage();
   const addressLine =
     businessFacts.factoryFullAddress ?? "Marrakech, Morocco";
 
@@ -83,8 +85,8 @@ export default function Footer() {
       <div className="pt-16 pb-8 border-t border-border/40">
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-12 gap-10 xl:gap-6 2xl:gap-10 items-start">
-          <div className="xl:col-span-3 flex flex-col items-start rtl:items-end text-start">
-            <Link className="inline-flex items-center mb-6" href="/" aria-label={siteConfig.brandName}>
+          <div className="site-brand xl:col-span-3 flex flex-col items-start text-left" dir="ltr">
+            <Link className="inline-flex items-center mb-6 shrink-0" href="/" aria-label={siteConfig.brandName}>
               <Image
                 src="/moroccan-cosmetic-logo.svg"
                 alt={`${siteConfig.brandName} logo`}
@@ -93,7 +95,12 @@ export default function Footer() {
                 className="h-10 md:h-12 w-auto max-w-[12rem] object-contain object-left"
               />
             </Link>
-            <p className="text-sm leading-relaxed text-muted-foreground font-light mb-6 max-w-[16rem]">
+            <p
+              className={`text-sm leading-relaxed text-muted-foreground font-light mb-6 max-w-[16rem] ${
+                language === "ar" ? "self-stretch text-right" : ""
+              }`}
+              dir={language === "ar" ? "rtl" : "ltr"}
+            >
               {t.footerDesc}
             </p>
             <SocialLinks />

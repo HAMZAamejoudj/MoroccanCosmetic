@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "../context/LanguageContext";
 import GlobalJsonLd from "../components/GlobalJsonLd";
 import LocalizedPageMetadata from "../components/LocalizedPageMetadata";
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import { siteConfig } from "@/config/siteConfig";
 import enMeta from "@/i18n/locales/en/meta.json";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
         <LanguageProvider>
           <LocalizedPageMetadata />
           {children}
+          <FloatingWhatsApp />
         </LanguageProvider>
       </body>
     </html>

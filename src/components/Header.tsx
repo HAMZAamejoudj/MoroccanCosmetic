@@ -51,7 +51,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-colors duration-300">
       <nav className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 h-20 lg:h-24 flex items-center justify-between gap-3 lg:grid lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:gap-8 xl:gap-12">
-        <Link href="/" className="flex items-center shrink-0" aria-label={siteConfig.brandName}>
+        <Link
+          href="/"
+          className="site-brand flex items-center shrink-0"
+          dir="ltr"
+          aria-label={siteConfig.brandName}
+        >
           <Image
             src="/moroccan-cosmetic-logo.svg"
             alt={`${siteConfig.brandName} logo`}

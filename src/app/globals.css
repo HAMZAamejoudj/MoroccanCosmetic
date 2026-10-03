@@ -83,6 +83,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Brand mark stays left-aligned in all languages (including Arabic). */
+.site-brand {
+  direction: ltr;
+  text-align: left;
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
