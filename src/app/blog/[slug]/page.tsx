@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import BlogPostArticle from "@/components/blog/BlogPostArticle";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 import { canonicalUrl, siteConfig } from "@/config/siteConfig";
+import { metadataLanguageAlternates, openGraphAlternateLocales } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: post.description,
     alternates: {
       canonical: url,
+      languages: metadataLanguageAlternates(`/blog/${post.slug}`),
     },
     openGraph: {
       title: post.seoTitle,
@@ -43,6 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url,
       siteName: siteConfig.brandName,
       locale: "en_US",
+      alternateLocale: openGraphAlternateLocales("en"),
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
