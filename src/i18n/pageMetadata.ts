@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import enMeta from "@/i18n/locales/en/meta.json";
 import frMeta from "@/i18n/locales/fr/meta.json";
 import arMeta from "@/i18n/locales/ar/meta.json";
@@ -11,7 +11,7 @@ const metaByLanguage = {
   en: enMeta,
   fr: frMeta,
   ar: arMeta,
-} as const satisfies Record<Language, typeof enMeta>;
+} as const satisfies Record<SiteLocale, typeof enMeta>;
 
 const PATH_TO_PAGE: Record<string, PageMetaKey> = {
   "/": "home",
@@ -28,7 +28,7 @@ export function getPageMetaKey(pathname: string): PageMetaKey {
   return PATH_TO_PAGE[normalized] ?? "home";
 }
 
-export function getPageMetadata(pathname: string, language: Language) {
+export function getPageMetadata(pathname: string, language: SiteLocale) {
   const page = getPageMetaKey(pathname);
   return metaByLanguage[language][page];
 }
@@ -42,7 +42,7 @@ export function buildMetadataForPage(page: PageMetaKey, path: string): Metadata 
 export function buildMetadataForPageLocalized(
   page: PageMetaKey,
   path: string,
-  language: Language,
+  language: SiteLocale,
   ogType: "website" | "article" = "website",
 ): Metadata {
   const { title, description } = metaByLanguage[language][page];

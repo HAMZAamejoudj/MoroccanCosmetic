@@ -3,7 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-import { useTranslations } from "@/i18n/useTranslations";
+import type { SiteLocale } from "@/i18n/locale";
+import type enHomePage from "@/i18n/locales/en/homePage.json";
+import type enHome from "@/i18n/locales/en/home.json";
+import type enBlog from "@/i18n/locales/en/blog.json";
 import {
   ArrowRight,
   BadgeCheck,
@@ -28,6 +31,7 @@ import {
 } from "lucide-react";
 import { businessFacts } from "@/config/businessFacts";
 import { getWhatsAppUrl } from "@/config/siteConfig";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 import { getHomeFaqItems } from "./homeFaq";
 import { homeImages } from "./homeImages";
 import LatestGuidesSection, { type LatestGuidePost } from "./LatestGuidesSection";
@@ -86,10 +90,25 @@ function HeroTrustPoints({
   );
 }
 
-export default function HomePageContent({ latestGuides }: { latestGuides: LatestGuidePost[] }) {
-  const t = useTranslations("homePage");
-  const tNav = useTranslations("home");
+type HomeCopy = typeof enHomePage;
+type NavCopy = typeof enHome;
+type BlogCopy = typeof enBlog;
+
+export default function HomePageContent({
+  locale,
+  copy: t,
+  nav: tNav,
+  blog: tBlog,
+  latestGuides,
+}: {
+  locale: SiteLocale;
+  copy: HomeCopy;
+  nav: NavCopy;
+  blog: BlogCopy;
+  latestGuides: LatestGuidePost[];
+}) {
   const faqItems = getHomeFaqItems(t);
+  const flipArrow = locale === "ar";
   const whatsappUrl = getWhatsAppUrl();
 
   const bulkTrust =
@@ -138,7 +157,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
         </div>
 
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20">
-          <div className="relative isolate max-w-xl">
+          <div className="home-hero-card-slot relative isolate">
             <div
               className="pointer-events-none absolute -top-10 -left-8 z-0 h-40 w-40 rounded-full bg-[#f5ead8]/55 blur-[48px] md:-top-12 md:-left-10 md:h-52 md:w-52 md:blur-[64px]"
               aria-hidden
@@ -151,7 +170,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
               className="pointer-events-none absolute inset-0 -z-10 rounded-[2rem] shadow-[0_0_70px_20px_rgba(210,190,160,0.35)]"
               aria-hidden
             />
-            <div className="relative z-10 rounded-3xl bg-[#ebe4d8]/88 backdrop-blur-md text-[#2c241c] p-7 md:p-10 border border-[#c9b896]/55 shadow-[0_24px_55px_-18px_rgba(60,48,36,0.35)]">
+            <div className="home-hero-card relative z-10 rounded-3xl bg-[#ebe4d8]/88 backdrop-blur-md text-[#2c241c] p-7 md:p-10 border border-[#c9b896]/55 shadow-[0_24px_55px_-18px_rgba(60,48,36,0.35)]">
             <p className="text-[11px] tracking-[0.18em] uppercase font-semibold text-[#6b5a48] mb-4">
               {t.heroEyebrow}
             </p>
@@ -170,11 +189,11 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
             />
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <Link
-                href="/contact/"
+                href={localizedPathForLocale("/contact", locale)}
                 className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-full bg-rose text-white hover:bg-rose-dark shadow-lg hover:shadow-rose/30 font-semibold text-sm transition-all duration-300 btn-glow"
               >
                 {t.heroBtnCatalog}
-                <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                <ArrowRight className={`w-4 h-4 ${flipArrow ? "rotate-180" : ""}`} />
               </Link>
               <a
                 href={whatsappUrl}
@@ -218,7 +237,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
                   className="w-full h-auto object-cover aspect-square"
                 />
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-base font-serif font-semibold text-foreground mb-2">{title}</h3>
+                  <p className="text-base font-serif font-semibold text-foreground mb-2">{title}</p>
                   <p className={`text-sm leading-relaxed flex-grow text-foreground/85 font-light`}>{description}</p>
                 </div>
               </article>
@@ -238,11 +257,11 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
           ) : null}
           <div className="mt-10">
             <Link
-              href="/products/"
+              href={localizedPathForLocale("/products", locale)}
               className="inline-flex items-center gap-2 text-rose font-semibold hover:underline"
             >
               {t.catalogLink}
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className={`w-4 h-4 ${flipArrow ? "rotate-180" : ""}`} />
             </Link>
           </div>
         </div>
@@ -262,7 +281,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
               <div className="w-12 h-12 rounded-xl bg-rose/10 text-rose flex items-center justify-center mb-6">
                 <Droplet className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyBulkTitle}</h3>
+              <p className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyBulkTitle}</p>
               <p className={`mb-6 min-h-[60px] ${bodyText}`}>{t.buyBulkDesc}</p>
               <div className="pt-6 border-t border-border/50">
                 <p className="text-sm font-semibold text-foreground mb-1">{t.buyBestFor}</p>
@@ -275,7 +294,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
               <div className="w-12 h-12 rounded-xl bg-rose/10 text-rose flex items-center justify-center mb-6">
                 <Package className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyRetailTitle}</h3>
+              <p className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyRetailTitle}</p>
               <p className={`mb-6 min-h-[60px] ${bodyText}`}>{t.buyRetailDesc}</p>
               <div className="pt-6 border-t border-border/50">
                 <p className="text-sm font-semibold text-foreground mb-1">{t.buyBestFor}</p>
@@ -287,7 +306,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
               <div className="w-12 h-12 rounded-xl bg-rose/10 text-rose flex items-center justify-center mb-6">
                 <Tag className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyPlTitle}</h3>
+              <p className="text-xl font-serif font-semibold mb-3 text-foreground">{t.buyPlTitle}</p>
               <p className={`mb-6 min-h-[60px] ${bodyText}`}>{t.buyPlDesc}</p>
               <div className="pt-6 border-t border-border/50">
                 <p className="text-sm font-semibold text-foreground mb-1">{t.buyBestFor}</p>
@@ -299,7 +318,10 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
           <div className="mt-12 text-center">
             <p className={`inline-block px-6 py-3 rounded-full bg-blush/20 ${bodyText}`}>
               <span className="font-medium text-foreground me-1">{t.buyNotSure}</span>
-              <Link href="/contact/" className="text-rose hover:underline font-medium">
+              <Link
+                href={localizedPathForLocale("/contact", locale)}
+                className="text-rose hover:underline font-medium"
+              >
                 {t.buyNotSureLink}
               </Link>
               {t.buyNotSureEnd}
@@ -358,7 +380,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
                       <Icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
+                      <p className="font-semibold text-foreground mb-1">{item.title}</p>
                       <p className={`${bodyText} text-sm`}>{item.desc}</p>
                     </div>
                   </div>
@@ -396,56 +418,40 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
             <p className={bodyText}>{t.orderIntro}</p>
           </div>
 
-          <div className="md:hidden space-y-4">
-            {orderSteps.map((step, idx) => {
-              const Icon = step.icon;
-              return (
-                <article
-                  key={idx}
-                  className="relative p-5 rounded-2xl bg-card border border-border shadow-sm flex gap-4 items-start"
-                >
-                  <div className="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-xl bg-rose/10 text-rose relative mt-1">
-                    <Icon className="h-6 w-6" strokeWidth={1.75} />
-                    <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-rose text-[10px] font-bold text-white ring-2 ring-card">
-                      {idx + 1}
-                    </span>
-                  </div>
-                  <div className={`text-base flex-1 ${bodyText}`}>
-                    <strong className="font-semibold text-foreground block mb-1 text-[1.05rem]">
-                      {step.title}
-                    </strong>
-                    {step.detail ? <span className="text-sm leading-relaxed">{step.detail}</span> : null}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-
-          <div className="hidden md:flex items-stretch gap-2 lg:gap-3">
+          <div className="flex flex-col gap-4 md:flex-row md:items-stretch md:gap-2 lg:gap-3">
             {orderSteps.map((step, idx) => {
               const Icon = step.icon;
               return (
                 <Fragment key={idx}>
-                  <article className="flex flex-1 min-w-0 flex-col rounded-2xl border border-border bg-card p-4 lg:p-5 text-center shadow-sm transition-all duration-300 hover:shadow-md hover:border-rose/30 card-lift">
-                    <div className="mx-auto mb-5 relative flex h-12 w-12 lg:h-14 lg:w-14 items-center justify-center rounded-xl bg-rose/10 text-rose">
+                  <article
+                    className="relative flex flex-1 min-w-0 gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:border-rose/30 hover:shadow-md card-lift md:flex-col md:gap-0 md:p-4 md:text-center lg:p-5"
+                  >
+                    <div className="relative mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-rose/10 text-rose md:mx-auto md:mb-5 md:mt-0 lg:h-14 lg:w-14">
                       <Icon className="h-6 w-6 lg:h-7 lg:w-7" strokeWidth={1.75} />
-                      <span className="absolute -top-2 -right-2 flex h-5 w-5 lg:h-6 lg:w-6 items-center justify-center rounded-full bg-rose text-[10px] lg:text-[11px] font-bold text-white shadow-sm ring-2 ring-card">
+                      <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-rose text-[10px] font-bold text-white ring-2 ring-card lg:h-6 lg:w-6 lg:text-[11px]">
                         {idx + 1}
                       </span>
                     </div>
-                    <p className={`text-base ${bodyText}`}>
-                      <strong className="font-semibold text-foreground block mb-2 text-[0.95rem] lg:text-[1.05rem] leading-snug">
+                    <p className={`flex-1 text-base md:flex-none ${bodyText}`}>
+                      <span className="mb-1 block font-semibold text-foreground text-[1.05rem] leading-snug md:mb-2 md:text-[0.95rem] lg:text-[1.05rem]">
                         {step.title}
-                      </strong>
-                      <span className="text-[0.8rem] lg:text-[0.85rem] leading-relaxed">{step.detail}</span>
+                      </span>
+                      {step.detail ? (
+                        <span className="text-sm leading-relaxed md:text-[0.8rem] lg:text-[0.85rem]">
+                          {step.detail}
+                        </span>
+                      ) : null}
                     </p>
                   </article>
                   {idx < orderSteps.length - 1 ? (
                     <div
-                      className="flex w-5 shrink-0 items-center justify-center self-center text-rose/30 lg:w-6"
+                      className="hidden w-5 shrink-0 items-center justify-center self-center text-rose/30 md:flex lg:w-6"
                       aria-hidden
                     >
-                      <ArrowRight className="h-5 w-5 lg:h-6 lg:w-6" strokeWidth={2} />
+                      <ArrowRight
+                        className={`h-5 w-5 lg:h-6 lg:w-6 ${flipArrow ? "rotate-180" : ""}`}
+                        strokeWidth={2}
+                      />
                     </div>
                   ) : null}
                 </Fragment>
@@ -489,9 +495,9 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
                     <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
                   </span>
                   <div className="min-w-0 pt-0.5">
-                    <h3 className="text-base font-semibold text-foreground leading-snug mb-2">
+                    <p className="text-base font-semibold text-foreground leading-snug mb-2">
                       {title}
-                    </h3>
+                    </p>
                     <p className={`text-sm leading-relaxed ${bodyText}`}>{description}</p>
                   </div>
                 </article>
@@ -530,9 +536,9 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
                 className="group rounded-2xl border border-border bg-card overflow-hidden"
               >
                 <summary className="cursor-pointer list-none px-5 py-4 flex items-center justify-between gap-4">
-                  <h3 className="font-serif font-semibold text-foreground text-left">
+                  <span className="font-serif font-semibold text-foreground text-start text-base md:text-lg">
                     {item.question}
-                  </h3>
+                  </span>
                   <span className="text-rose text-xl leading-none" aria-hidden>
                     +
                   </span>
@@ -547,7 +553,7 @@ export default function HomePageContent({ latestGuides }: { latestGuides: Latest
       </section>
 
       {/* Latest Blog Guides Section */}
-      <LatestGuidesSection posts={latestGuides} />
+      <LatestGuidesSection posts={latestGuides} copy={t} blog={tBlog} locale={locale} />
 
     </main>
   );

@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import type {
   BlogPost,
   BlogPostFrontmatter,
@@ -24,7 +24,7 @@ export type {
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
 
-export type BlogContentLocale = Language;
+export type BlogContentLocale = SiteLocale;
 
 export function slugify(text: string): string {
   const slug = text

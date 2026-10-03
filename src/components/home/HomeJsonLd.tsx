@@ -1,12 +1,11 @@
-"use client";
-
+import type { SiteLocale } from "@/i18n/locale";
+import { getNamespace } from "@/i18n/getMessages";
 import { buildFaqPageSchema } from "@/lib/jsonLd";
-import { useTranslations } from "@/i18n/useTranslations";
 import { getHomeFaqItems } from "./homeFaq";
 
-export default function HomeJsonLd() {
-  const t = useTranslations("homePage");
-  const faqSchema = buildFaqPageSchema(getHomeFaqItems(t));
+export default function HomeJsonLd({ locale }: { locale: SiteLocale }) {
+  const t = getNamespace(locale, "homePage");
+  const faqSchema = buildFaqPageSchema(getHomeFaqItems(t), locale);
 
   return (
     <script

@@ -4,15 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { PAGE_CONTAINER } from "@/lib/pageContainer";
-import { useTranslations } from "@/i18n/useTranslations";
+import type { SiteLocale } from "@/i18n/locale";
+import type enHomePage from "@/i18n/locales/en/homePage.json";
+import type enBlog from "@/i18n/locales/en/blog.json";
+import { localizedPath } from "@/lib/localePaths";
 import type { LatestGuidePost } from "@/lib/blog-types";
 import { localizedBlogPost } from "@/lib/blogLocale";
 
 export type { LatestGuidePost };
 
-export default function LatestGuidesSection({ posts }: { posts: LatestGuidePost[] }) {
-  const t = useTranslations("homePage");
-  const tBlog = useTranslations("blog");
+export default function LatestGuidesSection({
+  posts,
+  copy: t,
+  blog: tBlog,
+  locale,
+}: {
+  posts: LatestGuidePost[];
+  copy: typeof enHomePage;
+  blog: typeof enBlog;
+  locale: SiteLocale;
+}) {
+  const flipArrow = locale === "ar";
+  const blogIndexHref = localizedPath("/blog", locale);
 
   if (posts.length === 0) return null;
 
@@ -29,11 +42,11 @@ export default function LatestGuidesSection({ posts }: { posts: LatestGuidePost[
             </h2>
           </div>
           <Link
-            href="/blog/"
+            href={blogIndexHref}
             className="inline-flex items-center gap-2 text-sm font-semibold text-rose hover:text-rose-dark transition-colors"
           >
             <span>{t.guidesViewAll}</span>
-            <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+            <ArrowRight className={`w-4 h-4 ${flipArrow ? "rotate-180" : ""}`} />
           </Link>
         </div>
 
@@ -49,7 +62,7 @@ export default function LatestGuidesSection({ posts }: { posts: LatestGuidePost[
               className="group flex flex-col bg-card rounded-2xl border border-border shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
             >
               <Link
-                href={`/blog/${post.slug}/`}
+                href={localizedPath(`/blog/${post.slug}`, locale)}
                 className="relative aspect-[16/10] w-full overflow-hidden bg-muted block"
               >
                 <Image
@@ -73,18 +86,18 @@ export default function LatestGuidesSection({ posts }: { posts: LatestGuidePost[
                     {post.readingTime} {t.guidesMinRead}
                   </span>
                 </div>
-                <h3 className="text-lg font-serif font-semibold text-foreground leading-snug mb-3 group-hover:text-rose transition-colors line-clamp-2">
-                  <Link href={`/blog/${post.slug}/`}>{title}</Link>
-                </h3>
+                <p className="text-lg font-serif font-semibold text-foreground leading-snug mb-3 group-hover:text-rose transition-colors line-clamp-2">
+                  <Link href={localizedPath(`/blog/${post.slug}`, locale)}>{title}</Link>
+                </p>
                 <p className="text-xs text-muted-foreground font-light leading-relaxed mb-6 line-clamp-3">
                   {excerpt}
                 </p>
                 <Link
-                  href={`/blog/${post.slug}/`}
+                  href={localizedPath(`/blog/${post.slug}`, locale)}
                   className="mt-auto inline-flex items-center gap-1 text-xs font-semibold text-rose hover:text-rose-dark group-hover:translate-x-1 transition-all"
                 >
                   <span>{t.guidesReadMore}</span>
-                  <ArrowRight className="w-3.5 h-3.5 rtl:rotate-180" />
+                  <ArrowRight className={`w-3.5 h-3.5 ${flipArrow ? "rotate-180" : ""}`} />
                 </Link>
               </div>
             </article>

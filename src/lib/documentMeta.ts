@@ -1,10 +1,10 @@
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import { OPEN_GRAPH_LOCALE } from "@/i18n/openGraphLocale";
 
 export type DocumentMetaInput = {
   title: string;
   description: string;
-  locale: Language;
+  locale: SiteLocale;
 };
 
 function upsertMetaByName(name: string, content: string) {

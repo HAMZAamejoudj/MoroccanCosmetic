@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { useLanguage } from "@/context/LanguageContext";
+import { useLocale } from "@/context/LocaleContext";
 import { useTranslations } from "@/i18n/useTranslations";
 import type { BlogPost } from "@/lib/blog-types";
 import { localizedBlogPost } from "@/lib/blogLocale";
@@ -11,7 +11,6 @@ import { MobileToc } from "./MobileToc";
 import { DesktopSidebar } from "./DesktopSidebar";
 import BlogPostHeader from "./BlogPostHeader";
 import BlogPostMobileCta from "./BlogPostMobileCta";
-import LocalizedBlogPostMetadata from "./LocalizedBlogPostMetadata";
 
 type BlogPostArticleProps = {
   en: BlogPost;
@@ -36,9 +35,9 @@ function categoryLabel(
 }
 
 export default function BlogPostArticle({ en, fr, ar, related }: BlogPostArticleProps) {
-  const { language } = useLanguage();
+  const locale = useLocale();
   const t = useTranslations("blog");
-  const post = language === "fr" ? fr : language === "ar" ? ar : en;
+  const post = locale === "fr" ? fr : locale === "ar" ? ar : en;
 
   const displayMeta = localizedBlogPost(post.slug, t, {
     title: post.title,
@@ -47,7 +46,6 @@ export default function BlogPostArticle({ en, fr, ar, related }: BlogPostArticle
 
   return (
     <>
-      <LocalizedBlogPostMetadata en={en} fr={fr} ar={ar} />
       <BlogPostHeader
         slug={post.slug}
         title={displayMeta.title}

@@ -1,4 +1,4 @@
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import enAbout from "@/i18n/locales/en/about.json";
 import enBenefits from "@/i18n/locales/en/benefits.json";
 import enBlog from "@/i18n/locales/en/blog.json";
@@ -32,7 +32,7 @@ export const messages = {
   fr: { home: frHome, homePage: frHomePage, about: frAbout, benefits: frBenefits, privateLabel: frPrivateLabel, privateLabelPage: frPrivateLabelPage, products: frProducts, blog: frBlog, contact: frContact },
   ar: { home: arHome, homePage: arHomePage, about: arAbout, benefits: arBenefits, privateLabel: arPrivateLabel, privateLabelPage: arPrivateLabelPage, products: arProducts, blog: arBlog, contact: arContact },
 } as const satisfies Record<
-  Language,
+  SiteLocale,
   {
     home: typeof enHome;
     homePage: typeof enHomePage;

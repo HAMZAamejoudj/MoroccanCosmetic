@@ -1,12 +1,12 @@
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 
-const FLAG_BY_LANGUAGE: Record<Language, "gb" | "fr" | "ma"> = {
+const FLAG_BY_LANGUAGE: Record<SiteLocale, "gb" | "fr" | "ma"> = {
   en: "gb",
   fr: "fr",
   ar: "ma",
 };
 
-type FlagCode = (typeof FLAG_BY_LANGUAGE)[Language];
+type FlagCode = (typeof FLAG_BY_LANGUAGE)[SiteLocale];
 
 function GbFlag() {
   return (
@@ -52,7 +52,7 @@ export function FlagIcon({
   language,
   className = "h-4 w-6 shrink-0 overflow-hidden rounded-[3px] border border-black/10 shadow-sm",
 }: {
-  language: Language;
+  language: SiteLocale;
   className?: string;
 }) {
   const code = FLAG_BY_LANGUAGE[language];
@@ -65,8 +65,8 @@ export function FlagIcon({
   );
 }
 
-export function flagLabelForLanguage(language: Language): string {
-  const labels: Record<Language, string> = {
+export function flagLabelForLanguage(language: SiteLocale): string {
+  const labels: Record<SiteLocale, string> = {
     en: "English",
     fr: "Français",
     ar: "العربية",

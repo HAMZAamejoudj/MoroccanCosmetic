@@ -8,6 +8,8 @@
     "build:cpanel": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:links": "node scripts/check-links.mjs",
+    "export:translations": "node scripts/export-translations.mjs",
     "images:sync": "node scripts/sync-site-images.mjs"
   },
   "dependencies": {

@@ -1,7 +1,7 @@
 {
   "heroEyebrow": "Catalogue B2B premium",
   "heroTitle": "Nos produits cosmétiques marocains authentiques",
-  "heroDesc": "Approvisionnement en vrac certifié et solutions cosmétiques marque blanche premium issues de l'écosystème riche du Maroc.",
+  "heroDesc": "Approvisionnement en vrac direct usine et solutions marque blanche depuis notre site de production à Marrakech.",
   "inquireCta": "Demander des informations sur ce produit",
   "whyEyebrow": "Standards de qualité premium",
   "whyTitle": "Pourquoi choisir nos produits cosmétiques marocains ?",
@@ -11,8 +11,8 @@
       "desc": "Tous les produits proviennent directement de matières premières marocaines authentiques et de coopératives locales."
     },
     {
-      "title": "Qualité certifiée",
-      "desc": "Conformité aux normes Ecocert, USDA Organic, ONSSA et ISO pour les réglementations mondiales."
+      "title": "Qualité documentée",
+      "desc": "Spécifications, documentation de lot et dossiers d'export disponibles sur demande pour votre marché."
     },
     {
       "title": "Vrac et marque blanche",
@@ -37,8 +37,8 @@
       "answer": "Notre MOQ varie selon le produit. Pour la plupart des huiles comme l'argan et la figue de barbarie, le MOQ commence à 5 litres ou kilogrammes. Pour la marque blanche, le MOQ peut dépendre des exigences d'emballage. Contactez-nous pour les détails."
     },
     {
-      "question": "Vos produits cosmétiques sont-ils certifiés biologiques ?",
-      "answer": "Oui, nos ingrédients clés comme l'huile d'argan et l'huile de figue de barbarie sont certifiés Ecocert et USDA Organic. Tous nos produits respectent les normes internationales de sécurité cosmétique et la réglementation ONSSA."
+      "question": "Pouvez-vous fournir certificats ou analyses pour un produit ?",
+      "answer": "Nous fournissons les documents disponibles pour chaque produit — spécifications, FDS et analyses de lot — sur demande. Demandez avant commande et vérifiez le périmètre et la validité pour votre marché."
     },
     {
       "question": "Proposez-vous des services de marque blanche et de formulation sur mesure ?",
@@ -54,11 +54,11 @@
       "id": "argan-oil",
       "waMessage": "Bonjour, je suis intéressé par l'huile d'argan en gros",
       "title": "Huile d'argan marocaine premium",
-      "description": "Notre huile d'argan marocaine est 100 % pure, pressée à froid et sourcée directement auprès de coopératives locales au Maroc. Connue comme « l'or liquide », elle est riche en vitamine E, antioxydants et acides gras essentiels, idéale pour les soins de la peau, des cheveux et les formulations cosmétiques. Disponible en vrac et en marque blanche, certifiée Ecocert et USDA Organic.",
+      "description": "Notre huile d'argan marocaine est pressée à froid et sourcée auprès de coopératives locales. Riche en vitamine E et acides gras essentiels, elle convient aux soins peau, cheveux et formulations cosmétiques. Disponible en vrac et marque blanche avec documentation sur demande.",
       "highlights": [
-        "100 % pure, biologique, pressée à froid",
-        "Certifiée Ecocert et USDA Organic",
-        "Excellente pour l'anti-âge et l'hydratation"
+        "Pressée à froid au Maroc",
+        "Formats vrac et marque blanche",
+        "Appréciée pour l'hydratation"
       ]
     },
     {

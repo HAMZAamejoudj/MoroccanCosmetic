@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import { OPEN_GRAPH_LOCALE } from "@/i18n/openGraphLocale";
-import { metadataLanguageAlternates, openGraphAlternateLocales } from "@/lib/seo";
 import { canonicalUrl, siteConfig } from "@/config/siteConfig";
 
 type PageMetaInput = {
@@ -9,7 +8,7 @@ type PageMetaInput = {
   description: string;
   /** Route path, e.g. `/about` or `/`. */
   path: string;
-  locale?: Language;
+  locale?: SiteLocale;
   ogType?: "website" | "article";
 };
 
@@ -28,7 +27,6 @@ export function buildPageMetadata({
     description,
     alternates: {
       canonical: url,
-      languages: metadataLanguageAlternates(path),
     },
     openGraph: {
       title,
@@ -36,7 +34,6 @@ export function buildPageMetadata({
       url,
       siteName: siteConfig.brandName,
       locale: ogLocale,
-      alternateLocale: openGraphAlternateLocales(locale),
       type: ogType,
       images: [
         {

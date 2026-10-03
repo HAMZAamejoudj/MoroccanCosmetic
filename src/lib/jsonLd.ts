@@ -1,5 +1,14 @@
 import { businessFacts } from "@/config/businessFacts";
 import { siteConfig, getSameAsUrls } from "@/config/siteConfig";
+import type { SiteLocale } from "@/i18n/locale";
+import { canonicalUrlForLocale } from "@/lib/localePaths";
+
+function pageUrl(path: string, locale?: SiteLocale): string {
+  if (locale) {
+    return canonicalUrlForLocale(path, locale);
+  }
+  return `${siteConfig.siteUrl}${path === "/" ? "/" : `${path.replace(/\/$/, "")}/`}`;
+}
 
 function buildPostalAddress() {
   const address: Record<string, string> = {
@@ -30,8 +39,15 @@ export function buildOrganizationSchema(options?: { includeFounding?: boolean })
       contactType: "sales",
       telephone: siteConfig.phoneE164,
       email: siteConfig.email,
-      availableLanguage: ["English", "French", "Arabic"],
+      availableLanguage: ["en", "fr", "ar"],
     },
+    knowsAbout: [
+      "Argan oil",
+      "Moroccan black soap",
+      "Ghassoul clay",
+      "Floral waters",
+      "Private label cosmetics",
+    ],
     sameAs: getSameAsUrls(),
   };
 
@@ -52,6 +68,7 @@ export function buildOrganizationSchema(options?: { includeFounding?: boolean })
 
 export function buildBreadcrumbSchema(
   items: ReadonlyArray<{ name: string; path: string }>,
+  locale?: SiteLocale,
 ) {
   return {
     "@context": "https://schema.org",
@@ -60,17 +77,17 @@ export function buildBreadcrumbSchema(
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${siteConfig.siteUrl}${item.path === "/" ? "/" : `${item.path.replace(/\/$/, "")}/`}`,
+      item: pageUrl(item.path, locale),
     })),
   };
 }
 
-export function buildAboutPageSchema(description: string) {
+export function buildAboutPageSchema(description: string, locale?: SiteLocale) {
   return {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Us",
-    url: `${siteConfig.siteUrl}/about/`,
+    url: pageUrl("/about", locale),
     description,
     isPartOf: {
       "@type": "WebSite",
@@ -117,8 +134,9 @@ export function buildServiceSchema(options: {
 
 export function buildFaqPageSchema(
   items: ReadonlyArray<{ question: string; answer: string }>,
+  inLanguage?: string,
 ) {
-  return {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: items.map(({ question, answer }) => ({
@@ -130,4 +148,8 @@ export function buildFaqPageSchema(
       },
     })),
   };
+  if (inLanguage) {
+    schema.inLanguage = inLanguage;
+  }
+  return schema;
 }

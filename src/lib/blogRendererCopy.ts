@@ -1,4 +1,4 @@
-import type { Language } from "@/context/LanguageContext";
+import type { SiteLocale } from "@/i18n/locale";
 import enBlog from "@/i18n/locales/en/blog.json";
 import frBlog from "@/i18n/locales/fr/blog.json";
 import arBlog from "@/i18n/locales/ar/blog.json";
@@ -17,7 +17,7 @@ export type BlogRendererCopy = {
 
 const messages = { en: enBlog, fr: frBlog, ar: arBlog };
 
-export function getBlogRendererCopy(locale: Language): BlogRendererCopy {
+export function getBlogRendererCopy(locale: SiteLocale): BlogRendererCopy {
   const t = messages[locale];
   const quoteTokens =
     locale === "fr"

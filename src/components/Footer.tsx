@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useTranslations } from "@/i18n/useTranslations";
-import { useLanguage } from "@/context/LanguageContext";
+import { useLocale } from "@/context/LocaleContext";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 import { businessFacts } from "@/config/businessFacts";
 import { getWhatsAppUrl, siteConfig } from "@/config/siteConfig";
 import { siteImages } from "@/config/siteImages";
@@ -57,27 +58,30 @@ function SocialLinks() {
 
 function FooterHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h4 className="text-sm font-semibold mb-6 text-foreground tracking-wide uppercase">
+    <p className="text-sm font-semibold mb-6 text-foreground tracking-wide uppercase">
       {children}
-    </h4>
+    </p>
   );
 }
 
 export default function Footer() {
   const t = useTranslations("home");
-  const { language } = useLanguage();
+  const locale = useLocale();
   const addressLine =
     businessFacts.factoryFullAddress ?? "Marrakech, Morocco";
 
   const navLinks = [
-    { href: "/", label: t.navHome },
-    { href: "/about/", label: t.navAbout },
-    { href: "/products/", label: t.navProducts },
-    { href: "/private-label-moroccan-cosmetics/", label: t.navPrivateLabel },
-    { href: "/benefits/", label: t.navBenefits },
-    { href: "/blog/", label: t.navBlog },
-    { href: "/contact/", label: t.navContact },
-  ];
+    { logical: "/", label: t.navHome },
+    { logical: "/about", label: t.navAbout },
+    { logical: "/products", label: t.navProducts },
+    { logical: "/private-label-moroccan-cosmetics", label: t.navPrivateLabel },
+    { logical: "/benefits", label: t.navBenefits },
+    { logical: "/blog", label: t.navBlog },
+    { logical: "/contact", label: t.navContact },
+  ].map((item) => ({
+    href: localizedPathForLocale(item.logical, locale),
+    label: item.label,
+  }));
 
   return (
     <footer id="footer" className="bg-secondary text-foreground font-sans">
@@ -85,8 +89,18 @@ export default function Footer() {
       <div className="pt-16 pb-8 border-t border-border/40">
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-12 gap-10 xl:gap-6 2xl:gap-10 items-start">
-          <div className="site-brand xl:col-span-3 flex flex-col items-start text-left" dir="ltr">
-            <Link className="inline-flex items-center mb-6 shrink-0" href="/" aria-label={siteConfig.brandName}>
+          <div
+            className={`footer-brand xl:col-span-3 flex flex-col w-full ${
+              locale === "ar" ? "items-end" : "items-start text-start"
+            }`}
+            dir={locale === "ar" ? "ltr" : undefined}
+          >
+            <Link
+              className="footer-brand-logo inline-flex items-center mb-6 shrink-0"
+              dir="ltr"
+              href={localizedPathForLocale("/", locale)}
+              aria-label={siteConfig.brandName}
+            >
               <Image
                 src="/moroccan-cosmetic-logo.svg"
                 alt={`${siteConfig.brandName} logo`}
@@ -96,10 +110,8 @@ export default function Footer() {
               />
             </Link>
             <p
-              className={`text-sm leading-relaxed text-muted-foreground font-light mb-6 max-w-[16rem] ${
-                language === "ar" ? "self-stretch text-right" : ""
-              }`}
-              dir={language === "ar" ? "rtl" : "ltr"}
+              className="footer-brand-desc text-sm leading-relaxed text-muted-foreground font-light mb-6 max-w-[16rem]"
+              dir={locale === "ar" ? "rtl" : "ltr"}
             >
               {t.footerDesc}
             </p>

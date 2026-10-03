@@ -1,30 +1,35 @@
-"use client";
-
+import type { SiteLocale } from "@/i18n/locale";
+import { getNamespace } from "@/i18n/getMessages";
 import {
   buildAboutPageSchema,
   buildBreadcrumbSchema,
   buildFaqPageSchema,
   buildOrganizationSchema,
 } from "@/lib/jsonLd";
-import { useTranslations } from "@/i18n/useTranslations";
 import { getAboutFaqItems } from "./aboutFaq";
+import enMeta from "@/i18n/locales/en/meta.json";
+import frMeta from "@/i18n/locales/fr/meta.json";
+import arMeta from "@/i18n/locales/ar/meta.json";
 
-const ABOUT_DESCRIPTION =
-  "Meet Morocco Cosmetic: a Marrakech-based producer of argan oil and natural Moroccan cosmetics for wholesale and OEM buyers.";
+const metaByLocale = { en: enMeta, fr: frMeta, ar: arMeta } as const;
 
-export default function AboutJsonLd() {
-  const tAbout = useTranslations("about");
-  const tHome = useTranslations("home");
+export default function AboutJsonLd({ locale }: { locale: SiteLocale }) {
+  const tAbout = getNamespace(locale, "about");
+  const tHome = getNamespace(locale, "home");
   const faqItems = getAboutFaqItems(tAbout);
+  const description = metaByLocale[locale].about.description;
 
   const graph = [
-    buildAboutPageSchema(ABOUT_DESCRIPTION),
+    buildAboutPageSchema(description, locale),
     buildOrganizationSchema(),
-    buildBreadcrumbSchema([
-      { name: tHome.navHome, path: "/" },
-      { name: tHome.navAbout, path: "/about" },
-    ]),
-    buildFaqPageSchema(faqItems),
+    buildBreadcrumbSchema(
+      [
+        { name: tHome.navHome, path: "/" },
+        { name: tHome.navAbout, path: "/about" },
+      ],
+      locale,
+    ),
+    buildFaqPageSchema(faqItems, locale),
   ];
 
   return (

@@ -83,8 +83,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Brand mark stays left-aligned in all languages (including Arabic). */
-.site-brand {
+/* Header logo stays LTR in Arabic (footer uses .footer-brand). */
+header .site-brand {
   direction: ltr;
   text-align: left;
 }
@@ -95,6 +95,47 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic), var(--font-sans), sans-serif;
+}
+
+html[dir="rtl"] body {
+  line-height: 1.9;
+}
+
+html[dir="rtl"] header .site-brand {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Footer brand (AR): LTR flex context so items-end = physical RIGHT (RTL flex-end is left). */
+html[dir="rtl"] footer .footer-brand {
+  direction: ltr;
+  width: 100%;
+  align-items: flex-end;
+}
+
+html[dir="rtl"] footer .footer-brand .footer-brand-desc {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Home hero: card stays on the physical left in LTR and RTL (background bottle stays visible). */
+.home-hero-card-slot {
+  max-width: 36rem;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.home-hero-card {
+  text-align: left;
+}
+
+html[dir="rtl"] .home-hero-card {
+  text-align: right;
+  direction: rtl;
 }
 
 h1, h2, h3, h4, h5, h6 {
