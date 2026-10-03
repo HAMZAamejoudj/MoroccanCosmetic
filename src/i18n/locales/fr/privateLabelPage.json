@@ -1,0 +1,315 @@
+{
+  "ctaRequestQuote": "Demander un devis marque blanche",
+  "ctaWhatsApp": "Discuter sur WhatsApp",
+  "whatsappMessage": "Bonjour, je souhaite demander un devis marque blanche / OEM avec Morocco Cosmetic.",
+  "moqPrefix": "MOQ :",
+  "moqFlexible": "Flexible / Sur demande",
+  "effortLevelLabel": "Votre niveau d'effort :",
+  "keyBenefitsLabel": "Avantages clés :",
+  "manufactureOptionsLabel": "Options marque blanche disponibles :",
+  "mistakesRecommendationLabel": "Notre recommandation :",
+  "hero": {
+    "badge": "Hub de fabrication à Marrakech",
+    "titleBefore": "Cosmétiques marque blanche et OEM, fabriqués au ",
+    "titleHighlight": "Maroc",
+    "description": "Lancez ou développez votre ligne beauté avec de l'huile d'argan marocaine authentique, du savon noir, du ghassoul, des eaux florales et des kits spa — produits, remplis et conditionnés directement dans notre usine de Marrakech sous votre marque."
+  },
+  "serviceTiers": {
+    "eyebrow": "Solutions flexibles",
+    "title": "Marque blanche, marque privée ou OEM : que choisir ?",
+    "description": "Nous accompagnons les entreprises à chaque étape — des nouvelles marques qui testent 100 unités aux distributeurs internationaux qui lancent des formules sur mesure.",
+    "whiteLabel": {
+      "name": "Marque blanche",
+      "tag": "Mise sur le marché la plus rapide",
+      "description": "Nos formules standard éprouvées dans des emballages standards, prêtes pour vos étiquettes personnalisées.",
+      "effort": "Minimal — Choisissez les produits, envoyez votre logo et vos visuels d'étiquette.",
+      "features": [
+        "Formules marocaines authentiques en stock",
+        "Choix de flacons et pots standards",
+        "Production et expédition rapides",
+        "Faible investissement initial"
+      ]
+    },
+    "privateLabel": {
+      "name": "Marque privée",
+      "tag": "Identité de marque personnalisée",
+      "description": "Nos formules signature avec emballages, flacons, boîtes et parfums personnalisés.",
+      "effort": "Moyen — Choix du packaging, étiquetage et design de boîte.",
+      "features": [
+        "Parfums ou huiles essentielles sur mesure",
+        "Couleur de flacon, bouchons et pompes personnalisés",
+        "Emballage secondaire (boîtes) sur mesure",
+        "Documentation technique complète"
+      ]
+    },
+    "oem": {
+      "name": "OEM / Formule sur mesure",
+      "tag": "Formulation sur mesure",
+      "description": "Adaptation exclusive de formule ou développement produit de A à Z selon vos spécifications.",
+      "effort": "Élevé — Brief R&D, échantillonnage et tests de stabilité.",
+      "features": [
+        "Proportions d'ingrédients personnalisées",
+        "Texture et parfum exclusifs",
+        "Allégations cosmétiques ou cliniques ciblées",
+        "Analyses en laboratoire et tests dédiés"
+      ]
+    }
+  },
+  "manufacture": {
+    "eyebrow": "Capacités de production",
+    "title": "Ce que nous pouvons fabriquer sous votre marque",
+    "description": "Nous pressons l'huile d'argan pure et produisons le savon noir marocain traditionnel à Marrakech. Toutes les formules peuvent être remplies, étiquetées et emballées selon vos directives de marque.",
+    "alsoAvailable": "Également disponible : {oils}.",
+    "ctaQuestion": "Vous avez une formule ou un ingrédient spécifique ?",
+    "ctaLink": "Parlez à notre équipe production",
+    "categories": {
+      "pureOils": {
+        "title": "Huiles organiques pures",
+        "subtitle": "Huiles végétales marocaines pressées à froid et certifiées",
+        "description": "Huile d'argan cosmétique pressée à froid et huile de figue de barbarie pure, issues de l'extraction marocaine.",
+        "options": [
+          "Huile d'argan pure (désodorisée ou naturelle)",
+          "Huile de figue de barbarie (grade anti-âge)",
+          "Mélanges d'huiles botaniques sur mesure"
+        ],
+        "badge": "Forte demande"
+      },
+      "blackSoap": {
+        "title": "Savon noir marocain (Beldi)",
+        "subtitle": "Pâte nettoyante traditionnelle à l'huile d'olive",
+        "description": "Exfoliant hammam authentique produit à Marrakech. Formulé à l'huile d'olive et à l'eucalyptus ou infusions herbales naturelles.",
+        "options": [
+          "Savon beldi pur à l'olive traditionnel",
+          "Infusé à l'huile essentielle d'eucalyptus",
+          "Enrichi à l'huile d'argan ou poudre de nila"
+        ],
+        "badge": "Incontournable hammam"
+      },
+      "ghassoulClay": {
+        "title": "Ghassoul de l'Atlas & masques à l'argile",
+        "subtitle": "Argiles spa marocaines riches en minéraux",
+        "description": "Sourcé directement dans les montagnes de l'Atlas. Proposé en éclats secs, poudre fine purifiée ou pâtes herbales prêtes à l'emploi.",
+        "options": [
+          "Poudre purifiée et éclats naturels",
+          "Pâte prémélangée à l'eau de rose",
+          "Masques infusés aux herbes et huiles essentielles"
+        ],
+        "badge": "Riche en minéraux"
+      },
+      "floralWaters": {
+        "title": "Eaux florales distillées",
+        "subtitle": "Hydrolats purs à la vapeur",
+        "description": "Eaux botaniques 100 % pures distillées à partir de roses de Damas marocaines et de fleurs d'oranger. Idéales pour toniques et brumes visage.",
+        "options": [
+          "Eau de rose marocaine biologique",
+          "Eau de fleur d'oranger (néroli)",
+          "Hydrolats herbacés sur mesure"
+        ],
+        "badge": "100 % pur"
+      },
+      "botanicalPowders": {
+        "title": "Poudres beauté botaniques",
+        "subtitle": "Éclaircissants traditionnels et poudres capillaires",
+        "description": "Ingrédients marocains traditionnels conditionnés pour masques, soins capillaires et formulations maquillage.",
+        "options": [
+          "Poudre de nila bleu (éclat du teint)",
+          "Poudre de feuilles de sidr (lavage doux des cheveux)",
+          "Aker fassi (pigment rose et grenade)"
+        ],
+        "badge": "Ingrédients authentiques"
+      },
+      "hammamKits": {
+        "title": "Kits spa hammam & cadeaux",
+        "subtitle": "Sets bien-être marocains composés",
+        "description": "Sets hammam complets en boîtes ou pochettes personnalisées : savon, gant kessa, huile d'argan et ghassoul.",
+        "options": [
+          "Coffrets cadeaux rigides à votre marque",
+          "Kits hammam voyage et découverte",
+          "Formats professionnels spa en vrac"
+        ],
+        "badge": "Offres clés en main"
+      }
+    }
+  },
+  "responsibilities": {
+    "eyebrow": "Répartition claire des rôles",
+    "title": "Ce que vous décidez vs. ce que nous gérons",
+    "description": "Travailler avec notre usine de Marrakech vous laisse une liberté créative totale pendant que nous gérons la fabrication technique et la logistique.",
+    "youDecideTitle": "Vous décidez",
+    "youDecideSubtitle": "Votre identité de marque et vision produit",
+    "weHandleTitle": "Nous gérons",
+    "weHandleSubtitle": "L'exécution en usine à Marrakech",
+    "youDecide": [
+      {
+        "title": "Sélection produits et gamme",
+        "desc": "Choisissez ingrédients purs, formules signature ou parfums sur mesure."
+      },
+      {
+        "title": "Identité de marque et visuels",
+        "desc": "Votre logo, design d'étiquette, typographie et palette de couleurs."
+      },
+      {
+        "title": "Contenant et style d'emballage",
+        "desc": "Verre ambré, flacons givrés, pots ou sachets éco."
+      },
+      {
+        "title": "Marché cible et allégations",
+        "desc": "Positionnez votre ligne pour le luxe, les spas, l'e-commerce ou les laboratoires."
+      },
+      {
+        "title": "Quantités et croissance",
+        "desc": "Démarrez avec des minimums flexibles et montez en charge avec les ventes."
+      }
+    ],
+    "weHandle": [
+      {
+        "title": "Approvisionnement et extraction",
+        "desc": "Pressage de l'huile d'argan et production de cosmétiques marocains authentiques à Marrakech."
+      },
+      {
+        "title": "Remplissage, étiquetage et assemblage",
+        "desc": "Remplissage automatisé et manuel selon des normes d'hygiène strictes."
+      },
+      {
+        "title": "Contrôle qualité par lot",
+        "desc": "Tests rigoureux de pureté, stabilité et constance entre lots."
+      },
+      {
+        "title": "Documentation réglementaire",
+        "desc": "Listes INCI, FDS/SDS, certificats d'analyse et fiches techniques pour l'enregistrement."
+      },
+      {
+        "title": "Export et logistique",
+        "desc": "Documents douaniers, certificat d'origine et expédition internationale."
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Processus étape par étape",
+    "title": "Du brief initial à l'expédition mondiale",
+    "description": "Un processus fluide et transparent pour mettre vos cosmétiques marocains brandés en rayon en toute confiance.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Brief et demande",
+        "body": "Partagez vos idées produits, marché cible, quantités et préférences d'emballage."
+      },
+      {
+        "step": "02",
+        "title": "Échantillons et tests",
+        "body": "Recevez des lots échantillons et des échantillons d'emballage pour tester texture, parfum et qualité."
+      },
+      {
+        "step": "03",
+        "title": "Visuels et étiquetage",
+        "body": "Envoyez votre design ou travaillez avec nous pour respecter les mentions obligatoires et le format INCI."
+      },
+      {
+        "step": "04",
+        "title": "Validation et facture",
+        "body": "Confirmez les spécifications finales, le bon à tirer et la facture pro forma."
+      },
+      {
+        "step": "05",
+        "title": "Production en usine",
+        "bodyDefault": "Fabrication, remplissage, étiquetage et contrôle qualité dans notre usine de Marrakech.",
+        "bodyWithLeadTime": "Fabrication, remplissage, étiquetage et contrôle qualité sous {weeks} semaines."
+      },
+      {
+        "step": "06",
+        "title": "Export et expédition",
+        "body": "Emballage sécurisé avec documents d'export et livraison vers votre entrepôt ou centre logistique."
+      }
+    ]
+  },
+  "packaging": {
+    "eyebrow": "Options de personnalisation",
+    "title": "Options d'emballage marque blanche",
+    "description": "Large choix de flacons en verre, pots cosmétiques, sachets écologiques et coffrets cadeaux secondaires.",
+    "availableSizesPrefix": "Tailles disponibles :",
+    "bottles": {
+      "title": "Flacons en verre",
+      "desc": "Verre ambré, givré, vert foncé ou transparent avec compte-gouttes, pompes ou brumisateurs.",
+      "standardDetail": "Tailles standard : 15 ml, 30 ml, 50 ml, 100 ml, 250 ml."
+    },
+    "jars": {
+      "title": "Pots cosmétiques",
+      "desc": "Pots PET et verre ambré avec bouchons dorés, argentés ou noirs pour savon noir et ghassoul.",
+      "standardDetail": "Tailles standard : 100 g, 200 g, 250 g, 500 g, 1 kg."
+    },
+    "pouches": {
+      "title": "Sachets éco",
+      "desc": "Sachets stand-up refermables en foil et kraft pour poudres botaniques comme nila, sidr et ghassoul.",
+      "standardDetail": "Tailles standard : 100 g, 250 g, 500 g, 1 kg."
+    },
+    "boxes": {
+      "title": "Boîtes rigides et sets",
+      "desc": "Boîtes secondaires imprimées, coffrets hammam, boîtes spa en bois et sleeves promotionnels.",
+      "standardDetail": "Dimensions sur mesure et dorure à chaud sur demande."
+    }
+  },
+  "compliance": {
+    "badge": "Accompagnement réglementaire complet",
+    "title": "Documents d'export et conformité réglementaire",
+    "description": "En tant que propriétaire de marque, l'enregistrement des produits sur votre marché vous incombe (CPNP dans l'UE, SCPN au Royaume-Uni, FDA MoCRA aux États-Unis). Nous fournissons toute la documentation technique depuis notre laboratoire de Marrakech.",
+    "items": [
+      "Fiches produit et composition INCI complète",
+      "Fiches de données de sécurité (FDS / SDS)",
+      "Certificat d'analyse (COA) pour chaque lot de production",
+      "Certificat d'origine et documents douaniers d'export"
+    ],
+    "markets": {
+      "eu": { "label": "Marché UE", "value": "Prêt notification CPNP" },
+      "uk": { "label": "Marché UK", "value": "Compatible portail SCPN" },
+      "us": { "label": "Marché US", "value": "Données conformes FDA MoCRA" }
+    }
+  },
+  "mistakes": {
+    "eyebrow": "Expérience du secteur",
+    "title": "Erreurs courantes que nous aidons les nouvelles marques à éviter",
+    "description": "Lancer une marque beauté peut être délicat. Voici les pièges que notre équipe production à Marrakech vous aide à éviter.",
+    "items": [
+      {
+        "title": "Lancer trop de produits d'un coup",
+        "body": "Commencez avec 2 à 3 produits phares (huile d'argan et savon noir), testez votre marché et développez selon les réassorts réels.",
+        "solution": "Concentrez votre capital initial sur le marketing de vos produits héros."
+      },
+      {
+        "title": "Concevoir les étiquettes avant les contrôles réglementaires",
+        "body": "Créer des étiquettes sans réserver l'espace exact pour l'INCI, les numéros de lot, le contenu net et l'adresse du responsable.",
+        "solution": "Nous fournissons les dimensions exactes du gabarit avant la finalisation de vos visuels."
+      },
+      {
+        "title": "Mauvaise utilisation d'« Organic » et des logos de certification",
+        "body": "Placer les logos bio des matières premières sur les produits finis sans vérifier les droits marque blanche.",
+        "solution": "Nous vous guidons sur les formulations d'allégations légales pour votre pays cible."
+      },
+      {
+        "title": "Choisir du verre transparent pour des huiles sensibles",
+        "body": "Choisir le verre clair pour les photos, exposant les huiles sensibles aux UV comme l'argan et la figue de barbarie.",
+        "solution": "Privilégiez le verre ambré, vert foncé ou givré pour préserver la puissance des huiles."
+      },
+      {
+        "title": "Sous-estimer les délais de réassort",
+        "body": "Attendre la rupture totale de stock avant de recommander flacons ou formules spécialisées.",
+        "solution": "Fixez un point de réassort automatique à 30 % du stock."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Des questions ?",
+    "title": "Foire aux questions",
+    "description": "Tout ce qu'il faut savoir pour démarrer un projet marque blanche ou OEM avec notre usine de Marrakech."
+  },
+  "faqMoqQ": "Quelle est la commande minimum pour la marque blanche ?",
+  "faqMoqWhiteLabel": "Marque blanche : {value}.",
+  "faqMoqPrivateLabel": "Marque privée : {value}.",
+  "faqMoqOem": "OEM / formule sur mesure : {value}.",
+  "faqMoqSuffix": "Les produits peuvent être combinés dans une même commande.",
+  "faqLeadTimeQ": "Combien de temps dure la production ?",
+  "faqLeadTimeA": "{weeks} semaines après validation des visuels et acompte, selon la disponibilité des emballages.",
+  "faqOwnPackagingQ": "Puis-je utiliser mes propres flacons ou étiquettes ?",
+  "faqCustomFormulaQ": "Pouvez-vous développer une formule sur mesure ?",
+  "faqRegistrationQ": "Qui enregistre les produits dans mon pays ?",
+  "faqRegistrationA": "Vous, en tant que propriétaire de marque, ou votre représentant. Nous fournissons les documents techniques."
+}

@@ -1,0 +1,152 @@
+{
+  "heroSub": "Solutions Clé en Main",
+  "heroTitle": "Cosmétiques Marocains en Marque Blanche",
+  "heroDesc": "Créez votre propre marque de beauté premium avec des ingrédients authentiques et certifiés, sourcés directement depuis notre usine cosmétique marocaine.",
+  "introTitle": "Construire Votre Marque avec l'Héritage Marocain",
+  "introP1": "Créer une marque de beauté est plus simple avec le bon fournisseur. Chez Morocco Cosmetic, nous aidons les entreprises à créer leurs propres cosmétiques marocains en marque blanche à partir de produits authentiques inspirés des rituels de soin traditionnels.",
+  "introP2": "De l'huile d'argan pure et le savon noir marocain à l'argile de rhassoul, l'eau de rose, l'eau de fleur d'oranger, les huiles corporelles et capillaires, les kits hammam et les soins naturels, nous proposons des solutions de gros et de marque blanche pour marques, spas, détaillants, salons, e-commerces et distributeurs.",
+  "introP3": "Que vous lanciez une nouvelle gamme ou élargissiez un catalogue existant, notre service de marque blanche vous donne accès à des produits cosmétiques marocains fiables, polyvalents et faciles à commercialiser.",
+  "offeringsSub": "Gammes Sur Mesure",
+  "offeringsTitle": "Nos Capacités en Marque Blanche",
+  "productOfferings": [
+    {
+      "title": "Huile d'Argan en Marque Blanche",
+      "desc": "L'huile d'argan est l'une des huiles de beauté les plus célèbres du Maroc. Elle est utilisée pour le visage, les cheveux, le corps, la barbe, les ongles et les formulations cosmétiques. Nos options en marque blanche conviennent aux marques souhaitant vendre une huile de beauté marocaine premium sous leur propre étiquette, en différentes tailles de flacons et styles d'emballage.",
+      "bullets": [
+        "Marques soin peau & cheveux",
+        "Boutiques bio & salons",
+        "Soins barbe & formules spa luxe",
+        "Distributeurs grossistes & boutiques en ligne"
+      ]
+    },
+    {
+      "title": "Savon Noir Marocain en Marque Blanche",
+      "desc": "Le savon noir marocain, ou savon Beldi, est essentiel au rituel traditionnel du hammam. Il est utilisé avant l'exfoliation au gant Kessa pour nettoyer et préparer la peau. Notre savon noir en marque blanche convient aux centres bien-être, spas et détaillants.",
+      "bullets": [
+        "Formules traditionnelles olive & argan",
+        "Pots retail ou formats grossiste",
+        "Idéal pour kits rituels hammam complets",
+        "Détoxifie et nettoie en profondeur"
+      ]
+    },
+    {
+      "title": "Argile de Rhassoul en Marque Blanche",
+      "desc": "L'argile de rhassoul est une argile marocaine naturelle utilisée en masques visage, masques cheveux et soins corps. Elle plaît aux clients recherchant des produits simples à base de minéraux. Excellent choix pour les marques clean beauty, collections spa et gammes naturelles.",
+      "bullets": [
+        "Disponible en poudre, morceaux ou pâte",
+        "Riche en minéraux & absorption du sébum",
+        "Sourcing bio des montagnes de l'Atlas",
+        "Complète huiles et eaux florales"
+      ]
+    },
+    {
+      "title": "Eaux Florales & Produits Spa",
+      "desc": "En plus des huiles, savons et argiles, Morocco Cosmetic peut accompagner vos gammes en marque blanche avec des eaux florales et soins traditionnels pour créer une expérience beauté marocaine complète, pas seulement un produit isolé.",
+      "bullets": [
+        "Eau de rose distillée biologique",
+        "Eau de fleur d'oranger authentique",
+        "Huiles massage, cheveux et corps",
+        "Coffrets spa marocains & kits sur mesure"
+      ]
+    }
+  ],
+  "routineSub": "Rituels de Soin",
+  "routineTitle": "Créez une Gamme Soin Marocaine Complète",
+  "routineDesc": "Une marque blanche forte propose des collections cohérentes. Combinez des formulations traditionnelles pour offrir une routine quotidienne authentique à votre audience.",
+  "routineSteps": [
+    { "step": "1", "title": "Savon Noir", "desc": "Nettoyage corporel profond et adoucissant" },
+    { "step": "2", "title": "Gant Kessa", "desc": "Exfoliation complète du corps et détox" },
+    { "step": "3", "title": "Argile Rhassoul", "desc": "Masques purifiants à base de minéraux" },
+    { "step": "4", "title": "Eau de Rose", "desc": "Hydratation et tonification immédiates du visage" },
+    { "step": "5", "title": "Huile d'Argan", "desc": "Hydratation finale peau & cheveux" }
+  ],
+  "advantagesTitle": "Avantages Morocco Cosmetic",
+  "advantages": [
+    "Prix grossiste direct depuis notre usine marocaine certifiée",
+    "Matières premières en vrac et conditionnement retail fini",
+    "Flacons, pots, sachets et boîtes marque blanche flexibles",
+    "Aide à la conformité produit et certificats d'analyse",
+    "Logistique export clé en main et documents douaniers personnalisés"
+  ],
+  "audienceTitle": "Qui Peut Utiliser Notre Service ?",
+  "audienceDesc": "Nous adaptons volumes de commande, modèles d'emballage et configurations cosmétiques à différents modèles professionnels.",
+  "audienceTypes": [
+    "Startups beauté",
+    "Marques skincare",
+    "Entreprises capillaires",
+    "Propriétaires spa & hammam",
+    "Salons & centres bien-être",
+    "Vendeurs e-commerce",
+    "Marques coffrets cadeaux",
+    "Importateurs & distributeurs",
+    "Détaillants cosmétiques naturels",
+    "Fournisseurs hôtels & resorts"
+  ],
+  "workflowSub": "Processus B2B Simple",
+  "workflowTitle": "Comment Lancer Votre Projet Marque Blanche",
+  "workflowSteps": [
+    {
+      "step": "01",
+      "title": "Sélection Produits",
+      "desc": "Choisissez les produits à commercialiser dans notre catalogue cosmétique marocain (huile d'argan, savon noir, rhassoul, hydrolats floraux)."
+    },
+    {
+      "step": "02",
+      "title": "Choix Emballage",
+      "desc": "Définissez le style d'emballage, tailles de flacons/pots (verre ou plastique), types de sachets et spécifications d'étiquetage."
+    },
+    {
+      "step": "03",
+      "title": "Branding Personnalisé",
+      "desc": "Fournissez logo, nom de marque et informations réglementaires. Notre équipe accompagne la conformité design et l'alignement de votre identité."
+    },
+    {
+      "step": "04",
+      "title": "Fabrication & Export",
+      "desc": "Nous conditionnons, étiquetons, emballons et gérons logistique et documentation d'export pour une livraison fiable vers votre site."
+    }
+  ],
+  "quoteTitle": "Pour un devis rapide, préparez :",
+  "quoteItems": [
+    "Liste de sélection produits",
+    "Quantités cibles de commande",
+    "Style d'emballage souhaité",
+    "Pays de destination",
+    "Identité de marque & logos",
+    "Type de classification entreprise"
+  ],
+  "faqSub": "Questions Fréquentes",
+  "faqTitle": "FAQ Marque Blanche",
+  "faqs": [
+    {
+      "q": "Que sont les cosmétiques marocains en marque blanche ?",
+      "a": "Ce sont des produits de beauté fabriqués ou fournis pour votre entreprise et vendus sous votre propre marque. Nous produisons les formules naturelles premium, les conditionnons selon vos standards et les expédions prêts à l'export."
+    },
+    {
+      "q": "Puis-je créer une marque d'huile d'argan en marque blanche ?",
+      "a": "Oui. Vous pouvez créer votre marque d'huile d'argan avec étiquetage et emballage personnalisés selon la quantité commandée. Nous fournissons une huile d'argan 100 % pure pressée à froid certifiée Ecocert et USDA Organic."
+    },
+    {
+      "q": "Proposez-vous le savon noir marocain en marque blanche ?",
+      "a": "Oui. Le savon noir peut être fourni pour marques skincare, spas, hammams et détaillants, en pots retail, emballages personnalisés ou volumes en vrac."
+    },
+    {
+      "q": "Quels produits de beauté marocains puis-je vendre sous ma marque ?",
+      "a": "Options populaires : huile d'argan, savon noir, rhassoul, eau de rose, eau de fleur d'oranger, huiles corps et cheveux, huiles de massage, rituels hammam complets ou coffrets cadeaux."
+    },
+    {
+      "q": "La marque blanche convient-elle à une nouvelle entreprise beauté ?",
+      "a": "Oui. C'est un moyen pratique de lancer une marque sans construire toute l'infrastructure sourcing, tests et production. Cela réduit les coûts fixes et accélère le time-to-market."
+    },
+    {
+      "q": "Puis-je commander des cosmétiques marocains en vrac ?",
+      "a": "Oui. Morocco Cosmetic propose des produits de beauté marocains en gros et en vrac pour marques, détaillants, spas et distributeurs souhaitant gérer l'emballage eux-mêmes."
+    }
+  ],
+  "ctaSub": "Lancez Votre Marque",
+  "ctaTitle": "Démarrez Votre Projet Marque Blanche Aujourd'hui",
+  "ctaP1": "Les cosmétiques marocains en marque blanche sont une opportunité forte pour les marques recherchant des produits naturels, authentiques et inspirés de la tradition. Avec l'huile d'argan, le savon noir, le rhassoul, les eaux florales et les produits hammam, vous pouvez créer une gamme complète à fort attrait marché.",
+  "ctaP2": "Prêt à lancer votre marque de soin marocaine ? Contactez-nous pour les options marque blanche, tarifs grossiste et détails d'emballage.",
+  "ctaBtnWhatsapp": "Démarrer un Projet Marque Blanche",
+  "ctaBtnEmail": "Écrire à l'Équipe Commerciale"
+}

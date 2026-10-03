@@ -1,0 +1,315 @@
+{
+  "ctaRequestQuote": "Request a Private Label Quote",
+  "ctaWhatsApp": "Chat on WhatsApp",
+  "whatsappMessage": "Hello, I would like to request a private label / OEM quote with Morocco Cosmetic.",
+  "moqPrefix": "MOQ:",
+  "moqFlexible": "Flexible / On Request",
+  "effortLevelLabel": "Your Effort Level:",
+  "keyBenefitsLabel": "Key Benefits:",
+  "manufactureOptionsLabel": "Available Private Label Options:",
+  "mistakesRecommendationLabel": "Our Recommendation:",
+  "hero": {
+    "badge": "Marrakech Manufacturing Hub",
+    "titleBefore": "Private Label & OEM Cosmetics, Manufactured in ",
+    "titleHighlight": "Morocco",
+    "description": "Launch or expand your beauty line with authentic Moroccan argan oil, black soap, ghassoul clay, floral waters, and spa kits — produced, filled, and packaged directly in our Marrakech facility under your brand name."
+  },
+  "serviceTiers": {
+    "eyebrow": "Flexible Solutions",
+    "title": "White Label, Private Label, or OEM: Which Do You Need?",
+    "description": "We support businesses at every stage — from new brands testing 100 units to established international distributors launching custom formulas.",
+    "whiteLabel": {
+      "name": "White Label",
+      "tag": "Fastest Time to Market",
+      "description": "Our proven standard formulas in standard packaging, ready for your custom labels.",
+      "effort": "Lowest — Choose products, send your logo & label artwork.",
+      "features": [
+        "In-stock authentic Moroccan formulas",
+        "Choice of standard bottle & jar sizes",
+        "Fast production & fast dispatch",
+        "Low initial capital requirement"
+      ]
+    },
+    "privateLabel": {
+      "name": "Private Label",
+      "tag": "Custom Brand Identity",
+      "description": "Our signature formulas with specialized custom packaging, bottles, boxes, and custom scents.",
+      "effort": "Medium — Packaging selection, custom labeling & box design.",
+      "features": [
+        "Custom scent or essential oil options",
+        "Custom bottle color, caps & pumps",
+        "Custom secondary box packaging",
+        "Full technical documentation"
+      ]
+    },
+    "oem": {
+      "name": "OEM / Custom Formula",
+      "tag": "Bespoke Formulation",
+      "description": "Exclusive formula adaptation or ground-up product development tailored to your exact specification.",
+      "effort": "Highest — R&D brief, custom sampling, stability testing.",
+      "features": [
+        "Custom ingredient proportions",
+        "Exclusive texture & scent profile",
+        "Targeted clinical or cosmetic claims",
+        "Lab analysis & custom testing"
+      ]
+    }
+  },
+  "manufacture": {
+    "eyebrow": "Production Capabilities",
+    "title": "What We Can Manufacture Under Your Brand",
+    "description": "We extract pure argan oil and produce traditional Moroccan black soap directly in Marrakech. All formulas can be filled, labeled, and boxed to your exact brand guidelines.",
+    "alsoAvailable": "Also available: {oils}.",
+    "ctaQuestion": "Have a specific custom formula or ingredient requirement?",
+    "ctaLink": "Talk to our production team",
+    "categories": {
+      "pureOils": {
+        "title": "Pure Organic Oils",
+        "subtitle": "Cold-pressed & certified Moroccan carrier oils",
+        "description": "Cold-pressed cosmetic argan oil and pure prickly pear seed oil directly from Moroccan extraction.",
+        "options": [
+          "Pure Argan Oil (Deodorized or Natural)",
+          "Prickly Pear Seed Oil (Anti-Aging Grade)",
+          "Custom Botanical Oil Blends"
+        ],
+        "badge": "High Demand"
+      },
+      "blackSoap": {
+        "title": "Moroccan Black Soap (Beldi)",
+        "subtitle": "Traditional olive-oil cleansing paste",
+        "description": "Authentic hammam exfoliator produced in Marrakech. Formulated with olive oil and eucalyptus or natural herbal infusions.",
+        "options": [
+          "Traditional Pure Olive Beldi Soap",
+          "Eucalyptus Essential Oil Infused",
+          "Argan Oil or Nila Powder Enriched"
+        ],
+        "badge": "Hammam Staple"
+      },
+      "ghassoulClay": {
+        "title": "Atlas Ghassoul & Clay Masks",
+        "subtitle": "Mineral-rich Moroccan spa clays",
+        "description": "Sourced directly from the Atlas Mountains. Formulated as raw dried flakes, fine purified powder, or ready-to-use herbal pastes.",
+        "options": [
+          "Purified Powder & Natural Flakes",
+          "Rose Water Pre-Mixed Paste",
+          "Herbal & Essential Oil Infused Masks"
+        ],
+        "badge": "Mineral Rich"
+      },
+      "floralWaters": {
+        "title": "Distilled Floral Waters",
+        "subtitle": "Pure steam-distilled hydrosols",
+        "description": "100% pure botanical waters distilled from Moroccan Damask roses and orange blossoms. Perfect for toners and facial mists.",
+        "options": [
+          "Organic Moroccan Rose Water",
+          "Orange Blossom Water (Neroli)",
+          "Custom Herbal Hydrosols"
+        ],
+        "badge": "100% Pure"
+      },
+      "botanicalPowders": {
+        "title": "Botanical Beauty Powders",
+        "subtitle": "Traditional brighteners & hair care powders",
+        "description": "Traditional Moroccan ingredients packaged for masks, hair treatments, and color cosmetic formulations.",
+        "options": [
+          "Blue Nila Powder (Skin Brightening)",
+          "Sidr Leaf Powder (Gentle Hair Wash)",
+          "Aker Fassi (Rose & Pomegranate Pigment)"
+        ],
+        "badge": "Authentic Ingredients"
+      },
+      "hammamKits": {
+        "title": "Hammam Spa & Gift Kits",
+        "subtitle": "Curated Moroccan wellness sets",
+        "description": "Complete hammam sets packaged in custom boxes or pouches, combining soap, kessa gloves, argan oil, and ghassoul clay.",
+        "options": [
+          "Custom Branded Rigid Gift Boxes",
+          "Travel & Discovery Hammam Kits",
+          "Professional Spa Bulk Formats"
+        ],
+        "badge": "Turnkey Bundles"
+      }
+    }
+  },
+  "responsibilities": {
+    "eyebrow": "Clear Division of Responsibilities",
+    "title": "What You Decide vs. What We Handle",
+    "description": "Working with our Marrakech facility gives you complete creative freedom while we manage all technical manufacturing and logistics.",
+    "youDecideTitle": "You Decide",
+    "youDecideSubtitle": "Your brand identity & product vision",
+    "weHandleTitle": "We Handle",
+    "weHandleSubtitle": "Our Marrakech factory execution",
+    "youDecide": [
+      {
+        "title": "Product Selection & Range",
+        "desc": "Choose pure ingredients, signature formulas, or custom scents."
+      },
+      {
+        "title": "Brand Identity & Artwork",
+        "desc": "Your logo, label design, typography, and color palette."
+      },
+      {
+        "title": "Container & Packaging Style",
+        "desc": "Select from amber glass, frosted bottles, jars, or eco pouches."
+      },
+      {
+        "title": "Target Market & Claims",
+        "desc": "Position your line for luxury retail, spas, e-commerce, or labs."
+      },
+      {
+        "title": "Order Quantities & Growth",
+        "desc": "Start with flexible minimums and scale up as sales grow."
+      }
+    ],
+    "weHandle": [
+      {
+        "title": "Raw Sourcing & Extraction",
+        "desc": "Pressing argan oil & producing authentic Moroccan cosmetics in Marrakech."
+      },
+      {
+        "title": "Filling, Labeling & Assembly",
+        "desc": "Precision automated and hand-filling under strict hygiene standards."
+      },
+      {
+        "title": "Batch Quality Control",
+        "desc": "Rigorous testing for purity, stability, and batch-to-batch consistency."
+      },
+      {
+        "title": "Regulatory Documentation",
+        "desc": "INCI lists, MSDS/SDS, COAs, and technical specs for product registration."
+      },
+      {
+        "title": "Export & Cargo Logistics",
+        "desc": "Customs paperwork, certificate of origin, and international shipping."
+      }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Step-by-Step Workflow",
+    "title": "From Initial Brief to Global Shipment",
+    "description": "A streamlined, transparent process designed to get your branded Moroccan cosmetics onto store shelves with complete confidence.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Brief & Inquiry",
+        "body": "Tell us your product ideas, target market, quantities, and packaging preferences."
+      },
+      {
+        "step": "02",
+        "title": "Samples & Testing",
+        "body": "Receive sample batches and packaging samples to test texture, scent, and quality."
+      },
+      {
+        "step": "03",
+        "title": "Artwork & Labeling",
+        "body": "Send your design or work with us to ensure mandatory label requirements and INCI format."
+      },
+      {
+        "step": "04",
+        "title": "Approval & Invoice",
+        "body": "Confirm final product specifications, artwork proof, and pro-forma invoice."
+      },
+      {
+        "step": "05",
+        "title": "Factory Production",
+        "bodyDefault": "Manufacturing, filling, labeling, and QC check in our Marrakech facility.",
+        "bodyWithLeadTime": "Manufacturing, filling, labeling, and QC check within {weeks} weeks."
+      },
+      {
+        "step": "06",
+        "title": "Export & Shipment",
+        "body": "Packed securely with export documents and shipped to your warehouse or fulfillment center."
+      }
+    ]
+  },
+  "packaging": {
+    "eyebrow": "Customization Options",
+    "title": "Private Label Packaging Options",
+    "description": "We offer a wide selection of glass bottles, cosmetic jars, eco-friendly pouches, and secondary gift boxes.",
+    "availableSizesPrefix": "Available sizes:",
+    "bottles": {
+      "title": "Glass Bottles",
+      "desc": "Amber, frosted, dark green, or clear glass equipped with droppers, treatment pumps, or fine mists.",
+      "standardDetail": "Standard sizes: 15ml, 30ml, 50ml, 100ml, 250ml."
+    },
+    "jars": {
+      "title": "Cosmetic Jars",
+      "desc": "Durable PET and amber glass jars with gold, silver, or black screw caps for black soap and ghassoul clay.",
+      "standardDetail": "Standard sizes: 100g, 200g, 250g, 500g, 1kg."
+    },
+    "pouches": {
+      "title": "Eco Pouches",
+      "desc": "Stand-up resealable foil and kraft pouches for dry botanical powders like Nila, Sidr, and Ghassoul.",
+      "standardDetail": "Standard sizes: 100g, 250g, 500g, 1kg."
+    },
+    "boxes": {
+      "title": "Rigid Boxes & Sets",
+      "desc": "Custom printed secondary boxes, hammam gift sets, wooden spa boxes, and promotional sleeves.",
+      "standardDetail": "Custom dimensions and foil stamping on request."
+    }
+  },
+  "compliance": {
+    "badge": "Full Regulatory Support",
+    "title": "Export Documents & Regulatory Compliance",
+    "description": "As the brand owner, registering products in your destination market is your responsibility (such as CPNP notification in the EU, SCPN in the UK, or FDA listing under MoCRA in the US). We provide all necessary technical documentation from our Marrakech laboratory.",
+    "items": [
+      "Product Specification Sheets & Full INCI Composition",
+      "Material Safety Data Sheets (MSDS / SDS)",
+      "Certificate of Analysis (COA) for Every Production Batch",
+      "Certificate of Origin & Export Customs Documents"
+    ],
+    "markets": {
+      "eu": { "label": "EU Market", "value": "CPNP Notification Ready" },
+      "uk": { "label": "UK Market", "value": "SCPN Portal Compatible" },
+      "us": { "label": "US Market", "value": "FDA MoCRA Compliant Data" }
+    }
+  },
+  "mistakes": {
+    "eyebrow": "Industry Experience",
+    "title": "Common Mistakes We Help New Brands Avoid",
+    "description": "Launching a beauty brand can be tricky. Here are key pitfalls our Marrakech production team helps you navigate.",
+    "items": [
+      {
+        "title": "Launching Too Many Products At Once",
+        "body": "Start with 2–3 flagship products (like Argan Oil & Black Soap), test your market, and expand based on real reorders.",
+        "solution": "Focus your initial capital on marketing your core hero products."
+      },
+      {
+        "title": "Designing Labels Before Compliance Checks",
+        "body": "Designing labels without leaving exact space for mandatory INCI names, batch numbers, net content, and responsible person address.",
+        "solution": "We provide exact label template dimensions before you finalize artwork."
+      },
+      {
+        "title": "Misusing \"Organic\" & Certification Logos",
+        "body": "Placing raw material organic logos on finished products without verifying white label branding permissions.",
+        "solution": "We guide you on legal claim wording for your specific target country."
+      },
+      {
+        "title": "Choosing Clear Glass Bottles For Sensitive Oils",
+        "body": "Selecting clear glass solely for photos, exposing UV-sensitive oils like Argan and Prickly Pear to light degradation.",
+        "solution": "Opt for amber, dark green, or frosted glass to preserve oil potency."
+      },
+      {
+        "title": "Underestimating Reorder Lead Times",
+        "body": "Waiting until stock is completely sold out before reordering custom bottles or specialized formulas.",
+        "solution": "Set an automatic reorder point when inventory reaches 30%."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Got Questions?",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about starting a private label or OEM project with our Marrakech facility."
+  },
+  "faqMoqQ": "What is the minimum order for private label?",
+  "faqMoqWhiteLabel": "White label: {value}.",
+  "faqMoqPrivateLabel": "Private label: {value}.",
+  "faqMoqOem": "OEM / custom formula: {value}.",
+  "faqMoqSuffix": "Products can be combined in one order.",
+  "faqLeadTimeQ": "How long does production take?",
+  "faqLeadTimeA": "{weeks} weeks after artwork approval and deposit, depending on packaging availability.",
+  "faqOwnPackagingQ": "Can I use my own bottles or labels?",
+  "faqCustomFormulaQ": "Can you develop a custom formula?",
+  "faqRegistrationQ": "Who registers the products in my country?",
+  "faqRegistrationA": "You, as the brand owner, or your representative. We provide the technical documents."
+}

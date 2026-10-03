@@ -1,0 +1,120 @@
+{
+  "heroEyebrow": "About Morocco Cosmetic",
+  "heroTitle": "A Moroccan Cosmetic Factory Built for Professional Buyers",
+  "heroIntro": "Morocco Cosmetic is a producer of Moroccan cosmetic products based in Marrakech. We press argan oil and make black soap, and we fill, label and ship a full range of Moroccan cosmetic products for distributors, spas and brands around the world.",
+  "heroLinksPrefix": "Explore our",
+  "heroLinksJoinLast": " and ",
+  "heroLinksSuffix": "pages for catalog details and how we work with buyers.",
+  "linkProducts": "Products",
+  "linkPrivateLabel": "Private Label & OEM",
+  "linkContact": "Contact",
+  "linkBenefits": "Benefits",
+  "ctaContact": "Contact Us",
+  "ctaWhatsapp": "Chat on WhatsApp",
+  "visualCity": "Marrakech",
+  "visualCountry": "Morocco",
+  "visualBlurb": "Production and packing for wholesale, spas, and OEM partners.",
+  "visualFooter": "Cosmetic factory · Export hub",
+  "mapAlt": "Outline map of Morocco",
+  "visualAria": "Factory location in Marrakech, Morocco",
+  "photoExportAlt": "Pallet of sealed white cartons strapped for export",
+  "photoBulkAlt": "Bulk one-kilogram jars and litre argan oil on the production bench",
+  "photoPackingAlt": "Sealed shipping carton next to filled dropper bottles at the packing table",
+  "photoWorkshopAlt": "Argan oil bottles and bulk beldi soap prepared for packing in our Marrakech workshop",
+  "hubCardTitle": "Marrakech",
+  "hubCardSubtitle": "Production & export hub",
+  "hubIllustrationAria": "Marrakech production and export hub connected to the argan region in the southwest, the Atlas Mountains, and the rose valleys in the southeast.",
+  "hubTimeline": [
+    {
+      "label": "Argan region",
+      "sublabel": "Southwest"
+    },
+    {
+      "label": "Atlas Mountains",
+      "sublabel": "Ghassoul clay"
+    },
+    {
+      "label": "Rose valleys",
+      "sublabel": "South-east"
+    }
+  ],
+  "hubCenterTitle": "Marrakech",
+  "hubCenterSubtitle": "Production & export",
+  "hubNodes": [
+    "Argan region · southwest",
+    "Atlas Mountains · ghassoul clay",
+    "Rose valleys · south-east"
+  ],
+  "locationEyebrow": "Our location",
+  "locationTitle": "Why Marrakech",
+  "locationBody": "Marrakech sits between the regions our main ingredients come from: the argan area of the southwest, the Atlas Mountains where ghassoul clay is mined, and the rose-growing valleys to the south-east. It is also a well-connected export hub, which keeps lead times short for sea and air freight.",
+  "regions": [
+    {
+      "title": "Argan region",
+      "line": "Southwest — argan groves and cooperative supply."
+    },
+    {
+      "title": "Atlas Mountains",
+      "line": "Ghassoul clay and mineral ingredients."
+    },
+    {
+      "title": "Rose valleys",
+      "line": "Southeast — rose and floral harvests."
+    }
+  ],
+  "facilityEyebrow": "Production",
+  "facilityTitle": "What Happens in Our Facility",
+  "facilityIntro": "Each step below is part of our Marrakech workflow, including a quality check before shipment.",
+  "facilityProcesses": [
+    {
+      "title": "Argan oil pressing",
+      "text": "Argan kernels pressed in our facility."
+    },
+    {
+      "title": "Black soap making",
+      "text": "Traditional Moroccan black soap (savon beldi) made on site."
+    },
+    {
+      "title": "Filling",
+      "text": "Bulk and retail formats filled by our team."
+    },
+    {
+      "title": "Labelling",
+      "text": "Products labelled with our brand or yours."
+    }
+  ],
+  "promiseEyebrow": "What we promise",
+  "promiseTitle": "What You Can Expect From Us",
+  "expectations": [
+    {
+      "title": "Straight answers",
+      "text": "Clear replies on MOQs, prices and lead times."
+    },
+    {
+      "title": "Documents that match your batch",
+      "text": "Paperwork aligned with the shipment you receive."
+    },
+    {
+      "title": "Samples before you commit",
+      "text": "Try products before you place a full order."
+    },
+    {
+      "title": "One contact person",
+      "text": "The same team from quote through delivery."
+    }
+  ],
+  "visitEyebrow": "Visit us",
+  "visitTitle": "Visit Us",
+  "visitBody": "We welcome visits by appointment and can arrange a live video tour of the facility.",
+  "visitAddressLabel": "Address",
+  "visitHoursLabel": "Hours",
+  "faqEyebrow": "Questions",
+  "faqTitle": "Frequently Asked Questions",
+  "faqStillQuestions": "Still have questions?",
+  "faqContactLink": "Contact Us",
+  "faqManufacturerQ": "Are you a manufacturer or a trader?",
+  "faqManufacturerA": "Both, and we are transparent about it. We press argan oil and make black soap in our Marrakech facility. Our other products come from selected Moroccan producers; we fill, label, check and ship them from our facility.",
+  "faqVisitQ": "Can I visit the factory?",
+  "faqVisitA": "Yes, by appointment. We can also organize a video call inside the facility.",
+  "faqExportQ": "Which countries do you export to?"
+}

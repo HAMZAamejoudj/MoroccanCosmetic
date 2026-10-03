@@ -1,0 +1,120 @@
+{
+  "heroEyebrow": "À propos de Morocco Cosmetic",
+  "heroTitle": "Une usine de cosmétiques marocains pensée pour les acheteurs professionnels",
+  "heroIntro": "Morocco Cosmetic est un producteur de cosmétiques marocains basé à Marrakech. Nous pressons l’huile d’argan et fabriquons le savon noir, et nous conditionnons, étiquetons et expédions une gamme complète de cosmétiques marocains pour distributeurs, spas et marques du monde entier.",
+  "heroLinksPrefix": "Consultez nos pages",
+  "heroLinksJoinLast": " et ",
+  "heroLinksSuffix": "pour le catalogue et notre façon de travailler avec les acheteurs.",
+  "linkProducts": "Produits",
+  "linkPrivateLabel": "Marque blanche & OEM",
+  "linkContact": "Contact",
+  "linkBenefits": "Avantages",
+  "ctaContact": "Contactez-nous",
+  "ctaWhatsapp": "Discuter sur WhatsApp",
+  "visualCity": "Marrakech",
+  "visualCountry": "Maroc",
+  "visualBlurb": "Production et conditionnement pour grossistes, spas et partenaires OEM.",
+  "visualFooter": "Usine cosmétique · Hub export",
+  "mapAlt": "Carte contour du Maroc",
+  "visualAria": "Usine à Marrakech, Maroc",
+  "photoExportAlt": "Palette de cartons blancs cerclés, prête à l’export",
+  "photoBulkAlt": "Pots d’un kilo et bouteilles d’huile d’argan d’un litre sur le banc de production",
+  "photoPackingAlt": "Carton scellé à côté de flacons compte-gouttes remplis sur la table d’emballage",
+  "photoWorkshopAlt": "Bouteilles d’huile d’argan et savon beldi en vrac prêts à être emballés dans notre atelier à Marrakech",
+  "hubCardTitle": "Marrakech",
+  "hubCardSubtitle": "Hub de production & export",
+  "hubIllustrationAria": "Marrakech, hub de production et d’export, reliée à la région arganière au sud-ouest, au Haut Atlas et aux vallées des roses au sud-est.",
+  "hubTimeline": [
+    {
+      "label": "Région arganière",
+      "sublabel": "Sud-ouest"
+    },
+    {
+      "label": "Haut Atlas",
+      "sublabel": "Argile de ghassoul"
+    },
+    {
+      "label": "Vallées des roses",
+      "sublabel": "Sud-est"
+    }
+  ],
+  "hubCenterTitle": "Marrakech",
+  "hubCenterSubtitle": "Production & export",
+  "hubNodes": [
+    "Région arganière · sud-ouest",
+    "Haut Atlas · ghassoul",
+    "Vallées des roses · sud-est"
+  ],
+  "locationEyebrow": "Notre implantation",
+  "locationTitle": "Pourquoi Marrakech",
+  "locationBody": "Marrakech se situe entre les régions d’où viennent nos principales matières : le sud-ouest arganier, l’Atlas où l’on extrait le ghassoul, et les vallées des roses au sud-est. C’est aussi un hub export bien connecté, ce qui raccourcit les délais mer et air.",
+  "regions": [
+    {
+      "title": "Région arganière",
+      "line": "Sud-ouest — arganiers et approvisionnement coopératif."
+    },
+    {
+      "title": "Atlas",
+      "line": "Ghassoul et ingrédients minéraux."
+    },
+    {
+      "title": "Vallées des roses",
+      "line": "Sud-est — récoltes de roses et florales."
+    }
+  ],
+  "facilityEyebrow": "Production",
+  "facilityTitle": "Ce qui se passe dans notre usine",
+  "facilityIntro": "Chaque étape fait partie de notre processus à Marrakech, avec un contrôle qualité avant expédition.",
+  "facilityProcesses": [
+    {
+      "title": "Pressage de l’huile d’argan",
+      "text": "Amandes d’argan pressées dans notre usine."
+    },
+    {
+      "title": "Fabrication du savon noir",
+      "text": "Savon noir marocain traditionnel (beldi) fabriqué sur place."
+    },
+    {
+      "title": "Conditionnement",
+      "text": "Formats vrac et retail remplis par notre équipe."
+    },
+    {
+      "title": "Étiquetage",
+      "text": "Produits étiquetés à notre marque ou à la vôtre."
+    }
+  ],
+  "promiseEyebrow": "Notre engagement",
+  "promiseTitle": "Ce que vous pouvez attendre de nous",
+  "expectations": [
+    {
+      "title": "Réponses claires",
+      "text": "MOQ, prix et délais expliqués sans détour."
+    },
+    {
+      "title": "Documents conformes à votre lot",
+      "text": "Papiers alignés sur l’expédition reçue."
+    },
+    {
+      "title": "Échantillons avant engagement",
+      "text": "Testez les produits avant la commande ferme."
+    },
+    {
+      "title": "Un interlocuteur unique",
+      "text": "La même équipe du devis à la livraison."
+    }
+  ],
+  "visitEyebrow": "Nous rendre visite",
+  "visitTitle": "Visitez-nous",
+  "visitBody": "Les visites se font sur rendez-vous. Nous pouvons aussi organiser une visite vidéo en direct de l’usine.",
+  "visitAddressLabel": "Adresse",
+  "visitHoursLabel": "Horaires",
+  "faqEyebrow": "Questions",
+  "faqTitle": "Questions fréquentes",
+  "faqStillQuestions": "Encore des questions ?",
+  "faqContactLink": "Contactez-nous",
+  "faqManufacturerQ": "Êtes-vous fabricant ou négociant ?",
+  "faqManufacturerA": "Les deux, et nous sommes transparents. Nous pressons l’huile d’argan et fabriquons le savon noir dans notre usine de Marrakech. Nos autres produits viennent de producteurs marocains sélectionnés ; nous les conditionnons, étiquetons, contrôlons et expédions depuis notre site.",
+  "faqVisitQ": "Puis-je visiter l’usine ?",
+  "faqVisitA": "Oui, sur rendez-vous. Nous pouvons aussi organiser un appel vidéo depuis l’usine.",
+  "faqExportQ": "Vers quels pays exportez-vous ?"
+}

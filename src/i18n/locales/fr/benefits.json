@@ -1,0 +1,67 @@
+{
+  "heroSub": "Pourquoi nous Choisir",
+  "heroTitle": "Pourquoi Choisir Morocco Cosmetic – Produits Cosmétiques Marocains Premium",
+  "heroDesc": "Découvrez les avantages de vous approvisionner directement auprès d'un fabricant de cosmétiques marocain certifié et fournisseur B2B.",
+  "coreBenefits": [
+    {
+      "title": "Produits Cosmétiques Marocains Authentiques",
+      "desc": "Morocco Cosmetic propose une large gamme de produits cosmétiques marocains authentiques directement depuis notre usine. De l'huile d'argan et l'huile de pépins de figue de barbarie à l'eau de rose, le savon noir, la poudre d'aker fassi, la poudre de nila et l'argile de ghassoul, chaque produit reflète la richesse naturelle et l'héritage du Maroc. Notre usine allie un savoir traditionnel séculaire à des méthodes de production modernes pour garantir des ingrédients authentiques à chaque lot."
+    },
+    {
+      "title": "Qualité & Sécurité Certifiées",
+      "desc": "Tous nos produits sont fabriqués sous un contrôle qualité strict et conformes aux normes internationales. Les certifications Ecocert, USDA Organic, ONSSA et ISO garantissent des produits sûrs, fiables et adaptés aux acheteurs professionnels du monde entier. Nous fournissons documentation et certificats avec chaque commande pour inspirer confiance à nos clients."
+    },
+    {
+      "title": "Solutions Vrac & Vente en Gros",
+      "desc": "Nous comprenons les besoins des entreprises recherchant des produits cosmétiques marocains en vrac. Morocco Cosmetic propose des options de gros flexibles pour distributeurs, spas, détaillants et plateformes e-commerce. L'approvisionnement direct usine assure qualité constante, prix compétitifs et livraison fiable."
+    },
+    {
+      "title": "Marque Blanche & Image de Marque",
+      "desc": "Morocco Cosmetic accompagne les marques dans la création de leurs propres produits cosmétiques marocains en marque blanche. Nos services incluent le choix des formules, l'emballage, le conseil en branding et une livraison prête à l'export. Flacons d'huile d'argan, pots de savon noir, sprays d'eau de rose ou poudres d'argile : nous offrons une solution clé en main."
+    },
+    {
+      "title": "Confiance & Transparence",
+      "desc": "Chez Morocco Cosmetic, nous construisons des relations durables avec nos clients. Processus de production transparent, traçabilité complète et accompagnement professionnel font de nous un partenaire fiable pour les marques cosmétiques internationales. Chaque produit est sélectionné, emballé et expédié avec soin et conformité aux normes du commerce international."
+    },
+    {
+      "title": "Durabilité & Approvisionnement Éthique",
+      "desc": "Nous nous approvisionnons de manière responsable auprès de coopératives marocaines et d'agriculteurs locaux, en garantissant des pratiques éthiques et durables. Nos méthodes de production respectueuses de l'environnement préservent la pureté des ingrédients marocains tout en soutenant les communautés locales."
+    }
+  ],
+  "ingredientsSub": "Approvisionnement Botanique",
+  "ingredientsTitle": "Ingrédients Marocains Traditionnels à l'Attrait Moderne",
+  "ingredientsDesc": "Nos produits allient l'héritage naturel marocain aux exigences cosmétiques modernes. Ces ingrédients premium sont très recherchés par les marques de beauté internationales et les spas qui valorisent des cosmétiques naturels, efficaces et traçables.",
+  "traditionalIngredients": [
+    {
+      "title": "Huile d'Argan",
+      "desc": "Riche en vitamine E et acides gras pour la peau et les cheveux."
+    },
+    {
+      "title": "Huile de Pépins de Figue de Barbarie",
+      "desc": "Ingrédient anti-âge premium pour les formules de soin de luxe."
+    },
+    {
+      "title": "Eau de Rose & Poudre d'Aker Fassi",
+      "desc": "Toniques naturels, pigments et soins cosmétiques traditionnels."
+    },
+    {
+      "title": "Savon Noir & Argile de Ghassoul",
+      "desc": "Nettoyage traditionnel, détoxification et rituels de hammam."
+    },
+    {
+      "title": "Poudre de Nila",
+      "desc": "Enrichit les masques visage, gommages corps et formules capillaires."
+    }
+  ],
+  "ctaSub": "Votre Partenaire Fournisseur B2B",
+  "ctaTitle": "Votre Partenaire pour une Croissance Mondiale",
+  "ctaP1": "En collaborant avec Morocco Cosmetic, les entreprises accèdent à des produits cosmétiques marocains authentiques à fort attrait international. Huile d'argan en vrac, figue de barbarie, savon noir ou poudres naturelles en marque blanche : notre usine garantit fiabilité, qualité et documentation complète.",
+  "ctaP2": "Nous invitons distributeurs, détaillants, spas et marques à nous contacter pour découvrir les avantages de travailler directement avec une usine cosmétique marocaine. Morocco Cosmetic livre des produits premium, une qualité certifiée et un accompagnement professionnel pour votre croissance.",
+  "ctaBtnWhatsapp": "Contacter un Expert Grossiste",
+  "ctaBtnEmail": "Écrire à l'Équipe Commerciale",
+  "seoSection": {
+    "title": "Fabricant de Cosmétiques Marocains Premium",
+    "p1": "En tant que fabricant de premier plan de cosmétiques marocains, nous sommes spécialisés dans la production de produits de beauté de qualité supérieure, 100 % naturels. De l'huile d'argan bio pressée à froid au savon noir authentique, notre usine moderne au Maroc garantit les normes de production les plus strictes. Nous répondons aux besoins des marques mondiales, des spas et des grossistes à la recherche d'un approvisionnement fiable et de solutions en marque blanche.",
+    "p2": "Choisir l'approvisionnement direct auprès de Morocco Cosmetic signifie éliminer les intermédiaires, garantir la fraîcheur des produits et obtenir des prix de gros compétitifs. Associez-vous à nous pour développer votre marque avec des ingrédients marocains authentiques, certifiés et issus de sources éthiques pour les soins de la peau et des cheveux."
+  }
+}

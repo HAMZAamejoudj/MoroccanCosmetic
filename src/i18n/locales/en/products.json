@@ -1,0 +1,153 @@
+{
+  "heroEyebrow": "Premium B2B Catalog",
+  "heroTitle": "Our Authentic Moroccan Cosmetic Products",
+  "heroDesc": "Certified bulk supply and premium private label cosmetic solutions sourced from the rich ecosystem of Morocco.",
+  "inquireCta": "Inquire About This Product",
+  "whyEyebrow": "Premium Quality Standards",
+  "whyTitle": "Why Choose Our Moroccan Cosmetic Products?",
+  "whyItems": [
+    {
+      "title": "Authenticity",
+      "desc": "All products are sourced directly from authentic Moroccan raw materials and local cooperatives."
+    },
+    {
+      "title": "Certified Quality",
+      "desc": "Compliance with Ecocert, USDA Organic, ONSSA, and ISO standards for global regulations."
+    },
+    {
+      "title": "Bulk & Private Label",
+      "desc": "Flexible B2B capabilities, customized packaging, and tailor-made formulations for global spas and brands."
+    },
+    {
+      "title": "Traceable & Safe",
+      "desc": "Complete documentation package, Certificates of Analysis, and export health compliance."
+    },
+    {
+      "title": "Global Supply",
+      "desc": "Reliable logistic shipping options, customs handling, and secure protective export packaging."
+    }
+  ],
+  "faqEyebrow": "Common Questions",
+  "faqTitle": "Products FAQ",
+  "faqStillQuestions": "Still have questions?",
+  "faqContact": "Contact Us",
+  "faqs": [
+    {
+      "question": "What is the minimum order quantity (MOQ) for wholesale products?",
+      "answer": "Our minimum order quantity varies by product. For most oils like Argan and Prickly Pear, the MOQ starts at 5 liters or kilograms. For private label orders, MOQ can depend on packaging requirements. Contact us for specific details."
+    },
+    {
+      "question": "Are your cosmetic products certified organic?",
+      "answer": "Yes, our key ingredients such as Argan Oil and Prickly Pear Seed Oil are certified Ecocert and USDA Organic. All our products comply with international cosmetic safety standards and ONSSA regulations."
+    },
+    {
+      "question": "Do you offer private label and custom formulation services?",
+      "answer": "Absolutely. We provide comprehensive private label services including custom formulation, bottling, labeling, and packaging tailored to your brand's identity and market requirements."
+    },
+    {
+      "question": "How long does shipping take for international bulk orders?",
+      "answer": "Shipping times depend on the destination and method (air freight or sea freight). Generally, air freight takes 3-7 business days, while sea freight can take 2-4 weeks. We handle all export documentation to ensure smooth customs clearance."
+    }
+  ],
+  "items": [
+    {
+      "id": "argan-oil",
+      "waMessage": "Hello, I'm interested in wholesale Argan Oil",
+      "title": "Premium Moroccan Argan Oil",
+      "description": "Our Moroccan argan oil is 100% pure, cold-pressed, and sourced directly from local cooperatives in Morocco. Known as 'liquid gold,' it is rich in vitamin E, antioxidants, and essential fatty acids, making it ideal for skincare, haircare, and cosmetic formulations. Available in bulk and for private label, our argan oil is certified Ecocert and USDA Organic and meets international quality standards.",
+      "highlights": [
+        "100% pure, organic, cold-pressed",
+        "Ecocert & USDA Organic certified",
+        "Excellent for anti-aging and hydration"
+      ]
+    },
+    {
+      "id": "prickly-pear",
+      "waMessage": "Hello, I'm interested in wholesale Prickly Pear Seed Oil",
+      "title": "Organic Prickly Pear Seed Oil",
+      "description": "Our prickly pear seed oil is extracted from the seeds of the prickly pear cactus, offering an incredibly high concentration of vitamin E and essential fatty acids. This rare oil is highly valued in anti-aging skincare, serums, and luxury cosmetic formulations. Sourced from Morocco, it is available in wholesale quantities and private label options, ensuring traceability, purity, and premium quality.",
+      "highlights": [
+        "Extremely high in Vitamin E",
+        "Ultra-lightweight luxury absorption",
+        "Premium anti-aging formulation base"
+      ]
+    },
+    {
+      "id": "rose-water",
+      "waMessage": "Hello, I'm interested in wholesale Rose Water",
+      "title": "Moroccan Rose Water",
+      "description": "Our Moroccan rose water is produced from fresh roses grown in the Atlas Mountains. It is ideal for facial toners, skincare routines, and natural cosmetic formulations. It can be packaged for private label or bulk supply.",
+      "highlights": [
+        "Atlas Mountain fresh harvest",
+        "Double-distilled pure hydrosol",
+        "Natural toning & soothing mist"
+      ]
+    },
+    {
+      "id": "orange-blossom-water",
+      "waMessage": "Hello, I'm interested in wholesale Orange Blossom Water",
+      "title": "Orange Blossom Water",
+      "description": "We offer authentic Moroccan orange blossom water (neroli hydrosol), perfect for cosmetic, spa, and culinary uses. This floral water is widely used for face care, spa rituals, and fragrance blends.",
+      "highlights": [
+        "Authentic Moroccan neroli",
+        "Refreshing and calming properties",
+        "Ideal for spa and cosmetic formulations"
+      ]
+    },
+    {
+      "id": "aker-fassi",
+      "waMessage": "Hello, I'm interested in wholesale Aker Fassi Powder",
+      "title": "Aker Fassi Powder – Natural Pigment & Skincare",
+      "description": "Aker Fassi powder is a traditional Moroccan natural pigment derived from local roses and clay. Commonly used in cosmetics, henna blends, and natural blush formulations, it provides vibrant color and skin-beneficial properties. Our factory prepares it under strict quality standards for both wholesale and private label clients.",
+      "highlights": [
+        "100% natural rose & poppy pigment",
+        "Rich in antioxidant properties",
+        "Highly versatile formulation additive"
+      ]
+    },
+    {
+      "id": "nila-powder",
+      "waMessage": "Hello, I'm interested in wholesale Blue Nila Powder",
+      "title": "Blue Nila Powder – Traditional Moroccan Ingredient",
+      "description": "Blue nila powder is a natural Moroccan cosmetic ingredient used for facial masks, body scrubs, and hair treatments. It is prepared carefully to maintain purity and cosmetic properties, suitable for professional use, spas, and cosmetic brands seeking authentic Moroccan ingredients.",
+      "highlights": [
+        "Ethically sourced natural indigo",
+        "Skin-brightening and detoxifying",
+        "Hammam and spa favorite"
+      ]
+    },
+    {
+      "id": "black-soap",
+      "waMessage": "Hello, I'm interested in wholesale Moroccan Black Soap",
+      "title": "Moroccan Black Soap",
+      "description": "Our Moroccan black soap (Beldi Soap) is made from olives and natural oils, perfect for hammam rituals, exfoliation, and skin detoxification. It is suitable for all skin types, prepared traditionally, and packaged professionally for wholesale and private label use.",
+      "highlights": [
+        "Traditional Moroccan Beldi formula",
+        "Deep pore cleansing and detox",
+        "Prepares skin for kessa exfoliation"
+      ]
+    },
+    {
+      "id": "ghassoul-clay",
+      "waMessage": "Hello, I'm interested in wholesale Ghassoul Clay Powder",
+      "title": "Ghassoul Clay Powder – Natural Skin & Hair Care",
+      "description": "Ghassoul clay powder is a natural clay from the Moroccan Atlas Mountains. Known for its absorbent and cleansing properties, it is used in masks, shampoos, and spa treatments. Available in bulk or private label packaging, it maintains traditional Moroccan purity and modern cosmetic standards.",
+      "highlights": [
+        "Pure organic Atlas Mountain clay",
+        "High mineral content (silica, magnesium)",
+        "Absorbs excess sebum and impurities"
+      ]
+    },
+    {
+      "id": "sidr-powder",
+      "waMessage": "Hello, I'm interested in wholesale Sidr Powder",
+      "title": "Sidr Powder – Natural Leaf Care",
+      "description": "Sidr powder is a natural leaf powder used traditionally for hair washes and gentle skin care. It is a natural cleansing agent that leaves hair soft and skin purified without stripping natural oils.",
+      "highlights": [
+        "100% natural dried sidr leaves",
+        "Gentle botanical cleanser",
+        "Suitable for sensitive skin and hair"
+      ]
+    }
+  ]
+}

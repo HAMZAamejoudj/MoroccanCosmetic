@@ -1,0 +1,153 @@
+{
+  "heroEyebrow": "Catalogue B2B premium",
+  "heroTitle": "Nos produits cosmétiques marocains authentiques",
+  "heroDesc": "Approvisionnement en vrac certifié et solutions cosmétiques marque blanche premium issues de l'écosystème riche du Maroc.",
+  "inquireCta": "Demander des informations sur ce produit",
+  "whyEyebrow": "Standards de qualité premium",
+  "whyTitle": "Pourquoi choisir nos produits cosmétiques marocains ?",
+  "whyItems": [
+    {
+      "title": "Authenticité",
+      "desc": "Tous les produits proviennent directement de matières premières marocaines authentiques et de coopératives locales."
+    },
+    {
+      "title": "Qualité certifiée",
+      "desc": "Conformité aux normes Ecocert, USDA Organic, ONSSA et ISO pour les réglementations mondiales."
+    },
+    {
+      "title": "Vrac et marque blanche",
+      "desc": "Capacités B2B flexibles, emballages personnalisés et formulations sur mesure pour spas et marques internationales."
+    },
+    {
+      "title": "Traçable et sûr",
+      "desc": "Dossier documentaire complet, certificats d'analyse et conformité sanitaire à l'export."
+    },
+    {
+      "title": "Approvisionnement mondial",
+      "desc": "Options logistiques fiables, gestion douanière et emballages d'export protecteurs."
+    }
+  ],
+  "faqEyebrow": "Questions fréquentes",
+  "faqTitle": "FAQ Produits",
+  "faqStillQuestions": "Encore des questions ?",
+  "faqContact": "Contactez-nous",
+  "faqs": [
+    {
+      "question": "Quelle est la quantité minimum de commande (MOQ) pour les produits en gros ?",
+      "answer": "Notre MOQ varie selon le produit. Pour la plupart des huiles comme l'argan et la figue de barbarie, le MOQ commence à 5 litres ou kilogrammes. Pour la marque blanche, le MOQ peut dépendre des exigences d'emballage. Contactez-nous pour les détails."
+    },
+    {
+      "question": "Vos produits cosmétiques sont-ils certifiés biologiques ?",
+      "answer": "Oui, nos ingrédients clés comme l'huile d'argan et l'huile de figue de barbarie sont certifiés Ecocert et USDA Organic. Tous nos produits respectent les normes internationales de sécurité cosmétique et la réglementation ONSSA."
+    },
+    {
+      "question": "Proposez-vous des services de marque blanche et de formulation sur mesure ?",
+      "answer": "Absolument. Nous offrons des services complets de marque blanche : formulation personnalisée, conditionnement, étiquetage et emballage adaptés à l'identité et au marché de votre marque."
+    },
+    {
+      "question": "Combien de temps prend l'expédition pour les commandes internationales en vrac ?",
+      "answer": "Les délais dépendent de la destination et du mode (fret aérien ou maritime). En général, le fret aérien prend 3 à 7 jours ouvrés, le maritime 2 à 4 semaines. Nous gérons toute la documentation d'export pour un dédouanement fluide."
+    }
+  ],
+  "items": [
+    {
+      "id": "argan-oil",
+      "waMessage": "Bonjour, je suis intéressé par l'huile d'argan en gros",
+      "title": "Huile d'argan marocaine premium",
+      "description": "Notre huile d'argan marocaine est 100 % pure, pressée à froid et sourcée directement auprès de coopératives locales au Maroc. Connue comme « l'or liquide », elle est riche en vitamine E, antioxydants et acides gras essentiels, idéale pour les soins de la peau, des cheveux et les formulations cosmétiques. Disponible en vrac et en marque blanche, certifiée Ecocert et USDA Organic.",
+      "highlights": [
+        "100 % pure, biologique, pressée à froid",
+        "Certifiée Ecocert et USDA Organic",
+        "Excellente pour l'anti-âge et l'hydratation"
+      ]
+    },
+    {
+      "id": "prickly-pear",
+      "waMessage": "Bonjour, je suis intéressé par l'huile de figue de barbarie en gros",
+      "title": "Huile de figue de barbarie biologique",
+      "description": "Notre huile de figue de barbarie est extraite des graines du cactus figue de barbarie, offrant une concentration très élevée de vitamine E et d'acides gras essentiels. Cette huile rare est très prisée en soins anti-âge, sérums et formulations luxe. Sourcée au Maroc, disponible en gros et marque blanche avec traçabilité et pureté premium.",
+      "highlights": [
+        "Très riche en vitamine E",
+        "Absorption luxueuse ultra-légère",
+        "Base de formulation anti-âge premium"
+      ]
+    },
+    {
+      "id": "rose-water",
+      "waMessage": "Bonjour, je suis intéressé par l'eau de rose en gros",
+      "title": "Eau de rose marocaine",
+      "description": "Notre eau de rose marocaine est produite à partir de roses fraîches cultivées dans les montagnes de l'Atlas. Idéale pour les toniques visage, routines skincare et formulations naturelles. Emballage marque blanche ou approvisionnement en vrac.",
+      "highlights": [
+        "Récolte fraîche des montagnes de l'Atlas",
+        "Hydrolat pur double distillation",
+        "Brume tonifiante et apaisante naturelle"
+      ]
+    },
+    {
+      "id": "orange-blossom-water",
+      "waMessage": "Bonjour, je suis intéressé par l'eau de fleur d'oranger en gros",
+      "title": "Eau de fleur d'oranger",
+      "description": "Nous proposons une eau de fleur d'oranger marocaine authentique (hydrolat de néroli), parfaite pour les cosmétiques, spas et usages culinaires. Très utilisée pour les soins du visage, rituels spa et mélanges parfumés.",
+      "highlights": [
+        "Néroli marocain authentique",
+        "Propriétés rafraîchissantes et calmantes",
+        "Idéal pour spas et formulations cosmétiques"
+      ]
+    },
+    {
+      "id": "aker-fassi",
+      "waMessage": "Bonjour, je suis intéressé par la poudre Aker Fassi en gros",
+      "title": "Poudre Aker Fassi – Pigment naturel et soin",
+      "description": "La poudre Aker Fassi est un pigment naturel marocain traditionnel issu de roses locales et d'argile. Utilisée en cosmétique, mélanges henné et blush naturel, elle offre une couleur vive et des bienfaits pour la peau. Préparée dans notre usine selon des normes strictes pour le gros et la marque blanche.",
+      "highlights": [
+        "Pigment 100 % naturel rose et pavot",
+        "Riche en propriétés antioxydantes",
+        "Additif de formulation très polyvalent"
+      ]
+    },
+    {
+      "id": "nila-powder",
+      "waMessage": "Bonjour, je suis intéressé par la poudre de nila bleu en gros",
+      "title": "Poudre de nila bleu – Ingrédient marocain traditionnel",
+      "description": "La poudre de nila bleu est un ingrédient cosmétique marocain naturel pour masques visage, gommages corps et soins capillaires. Préparée avec soin pour maintenir pureté et propriétés cosmétiques, adaptée aux professionnels, spas et marques recherchant l'authentique marocain.",
+      "highlights": [
+        "Indigo naturel sourcé éthiquement",
+        "Éclaircissant et détoxifiant pour la peau",
+        "Favori des hammams et spas"
+      ]
+    },
+    {
+      "id": "black-soap",
+      "waMessage": "Bonjour, je suis intéressé par le savon noir marocain en gros",
+      "title": "Savon noir marocain",
+      "description": "Notre savon noir marocain (savon beldi) est fabriqué à partir d'olives et d'huiles naturelles, parfait pour les rituels hammam, l'exfoliation et la détoxification de la peau. Adapté à tous les types de peau, préparé traditionnellement et conditionné professionnellement pour le gros et la marque blanche.",
+      "highlights": [
+        "Formule beldi marocaine traditionnelle",
+        "Nettoyage en profondeur et détox des pores",
+        "Prépare la peau à l'exfoliation au kessa"
+      ]
+    },
+    {
+      "id": "ghassoul-clay",
+      "waMessage": "Bonjour, je suis intéressé par la poudre de ghassoul en gros",
+      "title": "Poudre de ghassoul – Soin naturel peau et cheveux",
+      "description": "La poudre de ghassoul est une argile naturelle des montagnes de l'Atlas marocaines. Connue pour ses propriétés absorbantes et nettoyantes, elle est utilisée dans les masques, shampoings et soins spa. Disponible en vrac ou marque blanche, pureté marocaine traditionnelle et normes cosmétiques modernes.",
+      "highlights": [
+        "Argile organique pure des montagnes de l'Atlas",
+        "Riche en minéraux (silice, magnésium)",
+        "Absorbe le sébum et les impuretés"
+      ]
+    },
+    {
+      "id": "sidr-powder",
+      "waMessage": "Bonjour, je suis intéressé par la poudre de sidr en gros",
+      "title": "Poudre de sidr – Soin naturel des feuilles",
+      "description": "La poudre de sidr est une poudre de feuilles utilisée traditionnellement pour le lavage des cheveux et les soins doux de la peau. Agent nettoyant naturel qui laisse les cheveux doux et la peau purifiée sans retirer les huiles naturelles.",
+      "highlights": [
+        "Feuilles de sidr séchées 100 % naturelles",
+        "Nettoyant botanique doux",
+        "Adapté aux peaux et cheveux sensibles"
+      ]
+    }
+  ]
+}
