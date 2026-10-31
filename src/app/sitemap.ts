@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_ROUTES } from "@/lib/site";
 import { getAllPosts } from "@/lib/blog";
+import { getAllProducts } from "@/lib/products";
 import { buildHreflangAlternates } from "@/lib/hreflang";
 import type { SiteLocale } from "@/i18n/locale";
 import { canonicalUrlForLocale } from "@/lib/localePaths";
@@ -26,6 +27,7 @@ function entryWithAlternates(
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const posts = getAllPosts();
+  const products = getAllProducts("en");
 
   const staticEntries: MetadataRoute.Sitemap = SITE_ROUTES.flatMap(({ path, priority, changeFrequency }) => {
     const locales = hreflangLocalesForPath(path);
@@ -34,6 +36,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency,
         priority,
+      }, locale),
+    );
+  });
+
+  const productEntries: MetadataRoute.Sitemap = products.flatMap((product) => {
+    const logicalPath = `/products/${product.slug}`;
+    const locales = hreflangLocalesForPath(logicalPath);
+    return locales.map((locale) =>
+      entryWithAlternates(logicalPath, locales, {
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.85,
       }, locale),
     );
   });
@@ -50,5 +64,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
   });
 
-  return [...staticEntries, ...blogPostEntries];
+  return [...staticEntries, ...productEntries, ...blogPostEntries];
 }

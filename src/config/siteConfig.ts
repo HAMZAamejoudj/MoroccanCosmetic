@@ -4,7 +4,7 @@ export const siteConfig = {
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
     "https://www.moroccocosmetic.com",
-  email: "moroccocosmetic@moroccocosmetic.com",
+  email: "contact@moroccocosmetic.com",
   phoneE164: "+212641517831",
   phoneDisplay: "+212 641-517831",
   whatsappNumber: "212641517831",

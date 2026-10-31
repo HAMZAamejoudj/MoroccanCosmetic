@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/sidr-powder-for-hair.webp"
 ---
 
-Long before shampoo, people across North Africa and the Middle East washed their hair with plant powders. Sidr is one of the best known. Made from the dried leaves of the jujube tree, it's still used today by people looking for a gentle, plant-based alternative to shampoo - and by brands building natural haircare lines.
+Long before shampoo, people across North Africa and the Middle East washed their hair with plant powders. [Sidr powder](/products/sidr-powder/) is one of the best known. Made from the dried leaves of the jujube tree, it's still used today by people looking for a gentle, plant-based alternative to shampoo - and by brands building natural haircare lines.
 
 ## What Sidr Powder Is
 
@@ -32,7 +32,7 @@ Sidr leaves naturally contain **saponins**: plant compounds that create a light 
 4. Leave for 5-10 minutes.
 5. Rinse very thoroughly - plant powders need more rinsing than shampoo.
 
-**Variations:** mix with rose water or orange blossom water for scent, or add a few drops of argan oil to the lengths afterwards for softness.
+**Variations:** mix with [rose water](/products/rose-water/) or [orange blossom water](/products/orange-blossom-water/) for scent, or add a few drops of [Moroccan argan oil](/products/argan-oil/) to the lengths afterwards for softness.
 
 ## What Customers Can Expect - Honestly
 
@@ -41,9 +41,9 @@ Sidr cleans gently and leaves hair feeling light. It's mostly a **traditional** 
 ## Product Ideas for Brands
 
 - **Hair-wash powder** in a resealable pouch or jar, with clear instructions.
-- **Hair mask blend:** sidr with ghassoul clay or other plant powders.
-- **"No-poo" kit:** sidr powder, a floral water and a small argan oil.
-- **Hammam haircare:** alongside black soap and ghassoul in spa kits.
+- **Hair mask blend:** sidr with [ghassoul clay](/products/ghassoul-clay/) or other plant powders.
+- **"No-poo" kit:** sidr powder, a [floral water](/products/rose-water/) and a small [argan oil](/products/argan-oil/).
+- **Hammam haircare:** alongside [Moroccan black soap](/products/black-soap/) and [ghassoul](/products/ghassoul-clay/) in spa kits.
 
 ## What to Check When Buying Sidr in Bulk
 
@@ -60,7 +60,7 @@ Sidr cleans gently and leaves hair feeling light. It's mostly a **traditional** 
 
 Keep sidr powder dry, closed and away from light and heat. Humidity is its main enemy: a damp powder clumps and can go mouldy.
 
-We supply sidr powder in bulk and in private label pouches - see our [products catalog](/products/) and [private label service](/private-label-moroccan-cosmetics/).
+We supply sidr powder in bulk and in private label pouches - see our [Sidr Powder product details](/products/sidr-powder/), [products catalog](/products/) and [turnkey private label service](/private-label-moroccan-cosmetics/).
 
 ## FAQ
 

@@ -11,7 +11,7 @@ status: "published"
 image: "/blog/ghassoul-clay-bulk-buying-guide.webp"
 ---
 
-Le ghassoul — aussi orthographié rhassoul ou rassoul — est l'un des rares ingrédients cosmétiques qui provient d'un seul pays. C'est une argile naturelle extraite au Maroc, utilisée depuis des générations pour laver cheveux et peau sans savon. Pour les marques et les spas, c'est un produit facile à apprécier : simple, naturel, avec une belle histoire.
+Le [ghassoul](/products/ghassoul-clay/) — aussi orthographié rhassoul ou rassoul — est l'un des rares ingrédients cosmétiques qui provient d'un seul pays. C'est une argile naturelle extraite au Maroc, utilisée depuis des générations pour laver cheveux et peau sans savon. Pour les marques et les spas, c'est un produit facile à apprécier : simple, naturel, avec une belle histoire.
 
 C'est aussi un ingrédient dont la qualité varie beaucoup. Ce guide couvre ce que les acheteurs doivent savoir avant de commander en vrac.
 
@@ -60,9 +60,9 @@ Beaucoup de sites affirment que le ghassoul « détoxifie le corps » ou « éli
 
 ## Comment l'utiliser
 
-- **Masque visage :** mélanger 1 à 2 cuillères à soupe avec de l'eau ou de l'eau de rose en pâte lisse, appliquer, laisser quelques minutes, rincer avant séchage complet.
+- **Masque visage :** mélanger 1 à 2 cuillères à soupe avec de l'eau ou de [l'eau de rose](/products/rose-water/) en pâte lisse, appliquer, laisser quelques minutes, rincer avant séchage complet.
 - **Lavage cheveux :** pâte plus fluide massée sur cheveux et cuir chevelu humides, puis rinçage abondant.
-- **Masque corps hammam :** après savon noir et exfoliation au kessa.
+- **Masque corps hammam :** après le [savon noir](/products/black-soap/) et l'exfoliation au kessa.
 
 Toujours mélanger dans un bol et avec une spatule non métalliques — habitude traditionnelle que beaucoup de spas conservent.
 
@@ -74,7 +74,7 @@ Toujours mélanger dans un bol et avec une spatule non métalliques — habitude
 4. Quels **formats vrac** (tailles de sacs, sacs doublés, cartons) ?
 5. **Stockage** et durée de conservation ?
 
-Nous fournissons le ghassoul en vrac et en marque blanche — consultez notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
+Nous fournissons le ghassoul en vrac et en marque blanche — consultez notre fiche produit [Argile de Ghassoul](/products/ghassoul-clay/), notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
 
 ## Questions fréquentes
 
@@ -88,6 +88,6 @@ Oui. Il est traditionnellement utilisé comme lavage capillaire naturel. Rincez 
 La poudre sèche se conserve bien fermée et au sec. Les pâtes prêtes ont une durée de vie plus courte ; suivez l'étiquette.
 
 ### Avec quoi mélanger le ghassoul ?
-De l'eau ou une eau florale comme l'eau de rose ou l'eau de fleur d'oranger.
+De l'eau ou une eau florale comme [l'eau de rose](/products/rose-water/) ou [l'eau de fleur d'oranger](/products/orange-blossom-water/).
 
 [Demander un devis]

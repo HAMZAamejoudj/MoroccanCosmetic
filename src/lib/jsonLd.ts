@@ -132,6 +132,60 @@ export function buildServiceSchema(options: {
   };
 }
 
+export function buildProductSchema(options: {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  sku?: string;
+  category?: string;
+  inLanguage?: string;
+}) {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: options.name,
+    description: options.description,
+    image: options.image,
+    url: options.url,
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.brandName,
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: siteConfig.brandName,
+      url: `${siteConfig.siteUrl}/`,
+    },
+    countryOfOrigin: {
+      "@type": "Country",
+      name: "Morocco",
+    },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: options.url,
+      seller: {
+        "@type": "Organization",
+        name: siteConfig.brandName,
+      },
+    },
+  };
+
+  if (options.sku) {
+    schema.sku = options.sku;
+  }
+  if (options.category) {
+    schema.category = options.category;
+  }
+  if (options.inLanguage) {
+    schema.inLanguage = options.inLanguage;
+  }
+
+  return schema;
+}
+
 export function buildFaqPageSchema(
   items: ReadonlyArray<{ question: string; answer: string }>,
   inLanguage?: string,

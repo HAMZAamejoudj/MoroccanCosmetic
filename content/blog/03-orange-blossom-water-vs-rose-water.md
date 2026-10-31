@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/orange-blossom-water-vs-rose-water.webp"
 ---
 
-Walk into a Moroccan home and you'll probably find both: a bottle of rose water in the bathroom and a bottle of orange blossom water in the kitchen - or the other way round. Both are distilled from flowers, both are used on the skin, and both are popular with natural beauty brands. But they're not interchangeable.
+Walk into a Moroccan home and you'll probably find both: a bottle of [rose water](/products/rose-water/) in the bathroom and a bottle of [orange blossom water](/products/orange-blossom-water/) in the kitchen - or the other way round. Both are distilled from flowers, both are used on the skin, and both are popular with natural beauty brands. But they're not interchangeable.
 
 ## The Basics
 
@@ -28,18 +28,18 @@ Both are **hydrosols**: the fragrant water collected when flowers are steam-dist
 
 ## Rose Water: The Classic Toner
 
-Rose water is the floral water most customers already know. It's used:
+[Moroccan rose water](/products/rose-water/) is the floral water most customers already know. It's used:
 
 - as a toner after cleansing,
 - as a refreshing face mist during the day,
-- to mix ghassoul clay into a mask,
+- to mix [ghassoul clay](/products/ghassoul-clay/) into a mask,
 - in toners, mists and creams as a base ingredient.
 
 Its scent is soft and familiar, which makes it easy to sell in almost any market.
 
 ## Orange Blossom Water: The Underrated One
 
-Orange blossom water (called "zhar" in Morocco) is used in cooking and in beauty routines. In cosmetics it works well as:
+[Orange blossom water](/products/orange-blossom-water/) (called "zhar" in Morocco) is used in cooking and in beauty routines. In cosmetics it works well as:
 
 - a body and hair mist,
 - a light, fresh face tonic,
@@ -51,8 +51,8 @@ It's less common on international shelves than rose water, which is exactly why 
 
 ## Which One Should You Choose?
 
-- **For a classic skincare line or a first product:** rose water. It's recognized everywhere.
-- **For a distinctive, fresher scent or a body/hair mist:** orange blossom water.
+- **For a classic skincare line or a first product:** [rose water](/products/rose-water/). It's recognized everywhere.
+- **For a distinctive, fresher scent or a body/hair mist:** [orange blossom water](/products/orange-blossom-water/).
 - **For a hammam or gift range:** both - customers like having the choice.
 - **For men's or unisex products:** orange blossom often works better than rose.
 
@@ -79,7 +79,7 @@ Store away from heat and light. For bulk, ask for food-safe or cosmetic-grade co
 
 Floral waters are usually supplied in 5L, 25L or larger containers, and in spray bottles for private label. Plan your volumes around the spring harvest, and keep opened containers closed and cool.
 
-We supply both waters in bulk and under private label - see our [products catalog](/products/) and [private label service](/private-label-moroccan-cosmetics/).
+We supply both waters in bulk and under private label - see our [Rose Water](/products/rose-water/), [Orange Blossom Water](/products/orange-blossom-water/), [products catalog](/products/) and [private label service](/private-label-moroccan-cosmetics/).
 
 ## FAQ
 
@@ -93,6 +93,6 @@ Neither is "better"; they have different scents and uses. Rose water is the clas
 Water-based products can develop microbial growth once opened. Ask your supplier how the product is preserved and follow its shelf life.
 
 ### Can I mix ghassoul clay with orange blossom water?
-Yes. It's a pleasant alternative to rose water for clay masks.
+Yes. It's a pleasant alternative to [rose water](/products/rose-water/) for [ghassoul clay](/products/ghassoul-clay/) masks.
 
 [Request a Quote]

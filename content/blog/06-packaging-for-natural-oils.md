@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/packaging-for-natural-oils.webp"
 ---
 
-We fill and label oils every week, and we see the same thing again and again: a brand chooses a beautiful bottle, and the product suffers. Natural oils like argan and prickly pear seed oil are sensitive to light, air and heat. The right packaging protects them; the wrong one shortens their life and makes the brand look careless.
+We fill and label oils every week, and we see the same thing again and again: a brand chooses a beautiful bottle, and the product suffers. Natural oils like [argan oil](/products/argan-oil/) and [prickly pear seed oil](/products/prickly-pear/) are sensitive to light, air and heat. The right packaging protects them; the wrong one shortens their life and makes the brand look careless.
 
 ## Rule 1: Protect the Oil From Light
 
@@ -63,8 +63,8 @@ Less air in the bottle means slower oxidation. Fill to the right level for the c
 
 ## Choosing Sizes
 
-- **15-30 ml:** premium face oils (prickly pear seed oil, pure argan for the face).
-- **50-100 ml:** argan oil for hair and body, blends.
+- **15-30 ml:** premium face oils ([prickly pear seed oil](/products/prickly-pear/), pure [argan oil](/products/argan-oil/) for the face).
+- **50-100 ml:** [argan oil](/products/argan-oil/) for hair and body, blends.
 - **200 ml and more:** professional and spa use.
 
 Custom-moulded glass usually needs large minimum orders. For a first launch, a stock bottle with a well-designed label and box gives a premium result at a much lower minimum.
@@ -78,12 +78,12 @@ Custom-moulded glass usually needs large minimum orders. For a first launch, a s
 5. Shipping protection?
 6. Samples tested with the real oil before mass production?
 
-We fill and label oils under your brand - see our [private label service](/private-label-moroccan-cosmetics/) and [products catalog](/products/).
+We fill and label oils under your brand - see our [Moroccan Argan Oil](/products/argan-oil/), [Prickly Pear Seed Oil](/products/prickly-pear/), [turnkey private label service](/private-label-moroccan-cosmetics/) and [products catalog](/products/).
 
 ## FAQ
 
 ### What is the best bottle for argan oil?
-Amber or dark glass with a dropper (face) or pump (hair and body) protects the oil best.
+Amber or dark glass with a dropper (face) or pump (hair and body) protects [argan oil](/products/argan-oil/) best.
 
 ### Can I sell argan oil in clear bottles?
 Yes, but protect it with a box and keep stock away from light, because light shortens shelf life.

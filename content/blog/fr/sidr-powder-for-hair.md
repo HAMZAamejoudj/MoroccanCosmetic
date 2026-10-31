@@ -11,7 +11,7 @@ status: "published"
 image: "/blog/sidr-powder-for-hair.webp"
 ---
 
-Bien avant le shampooing, les habitants d'Afrique du Nord et du Moyen-Orient lavaient leurs cheveux avec des poudres végétales. Le sidr est l'une des plus connues. Fabriquée à partir des feuilles séchées du jujubier, elle est encore utilisée par ceux qui cherchent une alternative douce et végétale au shampooing — et par les marques qui construisent des gammes capillaires naturelles.
+Bien avant le shampooing, les habitants d'Afrique du Nord et du Moyen-Orient lavaient leurs cheveux avec des poudres végétales. La [poudre de sidr](/products/sidr-powder/) est l'une des plus connues. Fabriquée à partir des feuilles séchées du jujubier, elle est encore utilisée par ceux qui cherchent une alternative douce et végétale au shampooing — et par les marques qui construisent des gammes capillaires naturelles.
 
 ## Ce qu'est la poudre de sidr
 
@@ -29,7 +29,7 @@ Les feuilles de sidr contiennent naturellement des **saponines** : composés vé
 4. Laisser 5 à 10 minutes.
 5. Rincer très abondamment — les poudres végétales demandent plus de rinçage qu'un shampooing.
 
-**Variantes :** mélanger avec de l'eau de rose ou de fleur d'oranger pour le parfum, ou ajouter quelques gouttes d'huile d'argan sur les longueurs ensuite pour la douceur.
+**Variantes :** mélanger avec de [l'eau de rose](/products/rose-water/) ou [de l'eau de fleur d'oranger](/products/orange-blossom-water/) pour le parfum, ou ajouter quelques gouttes [d'huile d'argan](/products/argan-oil/) sur les longueurs ensuite pour la douceur.
 
 ## Ce que les clients peuvent attendre — en toute honnêteté
 
@@ -38,9 +38,9 @@ Le sidr nettoie en douceur et laisse les cheveux légers. C'est surtout un ingr�
 ## Idées produits pour les marques
 
 - **Poudre lavante** en sachet refermable ou pot, avec des instructions claires.
-- **Mélange masque capillaire :** sidr avec ghassoul ou autres poudres végétales.
-- **Kit « no-poo » :** poudre de sidr, eau florale et petit flacon d'huile d'argan.
-- **Soin hammam :** aux côtés du savon noir et du ghassoul dans des kits spa.
+- **Mélange masque capillaire :** sidr avec [l'argile ghassoul](/products/ghassoul-clay/) ou d'autres poudres végétales.
+- **Kit « no-poo » :** poudre de sidr, eau florale et flacon [d'huile d'argan](/products/argan-oil/).
+- **Soin hammam :** aux côtés du [savon noir](/products/black-soap/) et du [ghassoul](/products/ghassoul-clay/) dans des kits spa.
 
 ## Ce qu'il faut vérifier en achetant du sidr en vrac
 
@@ -57,7 +57,7 @@ Le sidr nettoie en douceur et laisse les cheveux légers. C'est surtout un ingr�
 
 Garder la poudre de sidr sèche, fermée, à l'écart de la lumière et de la chaleur. L'humidité est son principal ennemi : une poudre humide agglomère et peut moisir.
 
-Nous fournissons la poudre de sidr en vrac et en sachets marque blanche — consultez notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
+Nous fournissons la poudre de sidr en vrac et en sachets marque blanche — consultez notre fiche produit [Poudre de Sidr](/products/sidr-powder/), notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
 
 ## Questions fréquentes
 

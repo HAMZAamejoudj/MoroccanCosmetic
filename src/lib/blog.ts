@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import type { SiteLocale } from "@/i18n/locale";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 import type {
   BlogPost,
   BlogPostFrontmatter,
@@ -89,7 +90,7 @@ export function getAllPosts(): BlogPost[] {
     .map((fileName) => {
       const fullPath = path.join(BLOG_DIR, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      return parsePost(fileContents, getBlogRendererCopy("en"));
+      return parsePost(fileContents, getBlogRendererCopy("en"), "en");
     })
     .filter((post) => post.status === "published")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -101,7 +102,7 @@ export function getPostBySlug(slug: string, locale: BlogContentLocale = "en"): B
   const enContents = readEnglishPostFile(slug);
   if (!enContents) return null;
 
-  const enPost = parsePost(enContents, getBlogRendererCopy("en"));
+  const enPost = parsePost(enContents, getBlogRendererCopy("en"), "en");
   if (locale === "en") return enPost;
 
   const localizedPath = localizedBlogPath(locale, slug);
@@ -112,6 +113,7 @@ export function getPostBySlug(slug: string, locale: BlogContentLocale = "en"): B
   const localized = parsePost(
     fs.readFileSync(localizedPath, "utf8"),
     getBlogRendererCopy(locale),
+    locale,
   );
 
   return {
@@ -134,7 +136,7 @@ export function getRelatedPosts(currentSlug: string, category: string, limit = 3
   return [...sameCategory, ...otherCategory].slice(0, limit);
 }
 
-function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
+function parsePost(fileContents: string, copy: BlogRendererCopy, locale: SiteLocale = "en"): BlogPost {
   const { data, content } = matter(fileContents);
   const frontmatter = data as BlogPostFrontmatter;
 
@@ -174,18 +176,30 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
   // Pre-process markdown for links trailing slashes and button tokens
   let processedMarkdown = cleanedMarkdown;
 
-  // Ensure internal links have trailing slashes e.g. /products/
-  processedMarkdown = processedMarkdown.replace(/\]\(\/([a-zA-Z0-9_-]+)\)/g, "](/$1/)");
-  processedMarkdown = processedMarkdown.replace(/\]\(\/([a-zA-Z0-9_-]+)\/\)/g, "](/$1/)");
-
   // Render markdown to HTML using custom marked renderer
   let h2Count = 0;
   const renderer = new marked.Renderer();
 
-  renderer.heading = (token: any) => {
-    const text = token.text || "";
+  renderer.link = function (token: any) {
+    let finalHref = token.href || "";
+    if (finalHref.startsWith("/") && !finalHref.startsWith("//")) {
+      const ext = path.extname(finalHref);
+      if (!ext && !finalHref.endsWith("/")) {
+        finalHref = `${finalHref}/`;
+      }
+      finalHref = localizedPathForLocale(finalHref, locale);
+    }
+    const titleAttr = token.title ? ` title="${token.title}"` : "";
+    const isExternal = finalHref.startsWith("http://") || finalHref.startsWith("https://");
+    const relAttr = isExternal ? ' rel="noopener noreferrer" target="_blank"' : "";
+    const content = token.tokens && this.parser ? this.parser.parseInline(token.tokens) : token.text;
+    return `<a href="${finalHref}" class="text-rose font-medium hover:underline"${titleAttr}${relAttr}>${content}</a>`;
+  };
+
+  renderer.heading = function (this: any, token: any) {
+    const text = this.parser ? this.parser.parseInline(token.tokens) : (token.text || "");
     const depth = token.depth;
-    const rawText = text.replace(/<[^>]+>/g, "").trim();
+    const rawText = (token.text || "").replace(/<[^>]+>/g, "").replace(/\[([^\]]+)\]\([^\)]+\)/g, "$1").trim();
     const id = headingId(rawText, headings);
 
     if (depth === 2 || depth === 3) {
@@ -197,6 +211,7 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
       h2Count++;
       // Mid-article CTA box after the 3rd H2
       if (h2Count === 3) {
+        const privateLabelUrl = localizedPathForLocale("/private-label-moroccan-cosmetics", locale);
         extraHtml = `
           <div class="my-10 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-rose/10 via-blush/20 to-background border border-rose/20 text-foreground flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
             <div class="space-y-1.5 text-center md:text-left">
@@ -204,7 +219,7 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
               <p class="font-serif text-xl sm:text-2xl font-semibold text-foreground leading-snug">${copy.midCtaTitle}</p>
               <p class="text-sm text-muted-foreground font-light">${copy.midCtaDesc}</p>
             </div>
-            <a href="/private-label-moroccan-cosmetics/" class="blog-cta-btn shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-xl bg-rose !text-white font-semibold text-sm hover:bg-rose-dark hover:!text-white transition-all shadow-md shadow-rose/20 hover:scale-105">
+            <a href="${privateLabelUrl}" class="blog-cta-btn shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-xl bg-rose !text-white font-semibold text-sm hover:bg-rose-dark hover:!text-white transition-all shadow-md shadow-rose/20 hover:scale-105">
               <span>${copy.midCtaButton} &rarr;</span>
             </a>
           </div>
@@ -221,11 +236,12 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
     return `<h${depth} class="font-serif font-semibold text-foreground mt-6 mb-3">${text}</h${depth}>`;
   };
 
-  renderer.paragraph = (token: any) => {
-    const text = token.text || "";
+  renderer.paragraph = function (this: any, token: any) {
+    const rawText = token.text || "";
     // Check for [Request a Quote] token on its own line
-    const trimmed = text.trim();
+    const trimmed = rawText.trim();
     if (copy.quoteTokens.includes(trimmed) || trimmed === "&lbrack;Request a Quote&rbrack;") {
+      const contactUrl = localizedPathForLocale("/contact", locale);
       return `
         <div class="my-10 p-6 sm:p-8 rounded-2xl bg-card border border-border shadow-md text-foreground flex flex-col sm:flex-row items-center justify-between gap-6">
           <div class="space-y-1 text-center sm:text-left">
@@ -233,7 +249,7 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
             <p class="text-sm text-muted-foreground font-light">${copy.inlineQuoteDesc}</p>
           </div>
           <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 w-full sm:w-auto shrink-0">
-            <a href="/contact/" class="blog-cta-btn inline-flex items-center justify-center px-5 py-3 rounded-xl bg-rose !text-white font-semibold text-sm hover:bg-rose-dark hover:!text-white transition-colors shadow-sm shadow-rose/20">
+            <a href="${contactUrl}" class="blog-cta-btn inline-flex items-center justify-center px-5 py-3 rounded-xl bg-rose !text-white font-semibold text-sm hover:bg-rose-dark hover:!text-white transition-colors shadow-sm shadow-rose/20">
               <span>${copy.requestQuote}</span>
             </a>
             <a href="https://wa.me/212641517831?text=Hello,%20I%20want%20to%20inquire%20about%20bulk%20ingredients." target="_blank" rel="noopener noreferrer" class="blog-cta-btn inline-flex items-center justify-center px-5 py-3 rounded-xl border border-border bg-background text-foreground font-semibold text-sm hover:bg-muted transition-colors">
@@ -243,7 +259,8 @@ function parsePost(fileContents: string, copy: BlogRendererCopy): BlogPost {
         </div>
       `;
     }
-    return `<p class="mb-6 text-[18px] leading-[1.75] text-foreground/90 font-light">${text}</p>`;
+    const body = this.parser ? this.parser.parseInline(token.tokens) : rawText;
+    return `<p class="mb-6 text-[18px] leading-[1.75] text-foreground/90 font-light">${body}</p>`;
   };
 
   let html = marked.parse(processedMarkdown, { renderer }) as string;

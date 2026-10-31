@@ -51,6 +51,18 @@ const CATALOG_IMAGES = [
   homeImages.akerFassi,
 ] as const;
 
+const CATALOG_SLUGS = [
+  "argan-oil",
+  "prickly-pear",
+  "black-soap",
+  "ghassoul-clay",
+  "rose-water",
+  "orange-blossom-water",
+  "nila-powder",
+  "sidr-powder",
+  "aker-fassi",
+] as const;
+
 const DOC_ICONS = [ClipboardList, ShieldCheck, FileCheck, BadgeCheck, Receipt] as const;
 const AUDIENCE_ICONS = [Truck, Building2, Store, FlaskConical] as const;
 const ORDER_ICONS = [MessageSquare, BookOpen, FileCheck, Settings, Plane] as const;
@@ -122,6 +134,7 @@ export default function HomePageContent({
 
   const catalogProductCards = t.catalogProducts.map((product, i) => ({
     ...product,
+    slug: CATALOG_SLUGS[i],
     image: CATALOG_IMAGES[i],
   }));
 
@@ -178,9 +191,38 @@ export default function HomePageContent({
               {t.heroTitle}{" "}
               <span className="text-rose">{t.heroTitleAccent}</span>
             </h1>
-            <p className="text-sm md:text-base text-[#4a3f35] leading-relaxed mb-6 font-light">
+            <p className="text-sm md:text-base text-[#4a3f35] leading-relaxed mb-4 font-light">
               {t.heroIntro}
             </p>
+            <div className="flex flex-wrap items-center gap-1.5 mb-6 text-xs text-[#3d2e22]">
+              <span className="font-semibold text-rose self-center me-1">
+                {locale === "fr" ? "Produits phares :" : locale === "ar" ? "أبرز المنتجات:" : "Flagship:"}
+              </span>
+              <Link
+                href={localizedPathForLocale("/products/argan-oil", locale)}
+                className="px-2.5 py-1 rounded-full bg-white/75 hover:bg-white border border-[#c9b896]/60 transition-colors font-medium hover:text-rose shadow-2xs"
+              >
+                {locale === "fr" ? "Huile d'Argan" : locale === "ar" ? "زيت الأركان" : "Argan Oil"}
+              </Link>
+              <Link
+                href={localizedPathForLocale("/products/prickly-pear", locale)}
+                className="px-2.5 py-1 rounded-full bg-white/75 hover:bg-white border border-[#c9b896]/60 transition-colors font-medium hover:text-rose shadow-2xs"
+              >
+                {locale === "fr" ? "Figue de Barbarie" : locale === "ar" ? "التين الشوكي" : "Prickly Pear"}
+              </Link>
+              <Link
+                href={localizedPathForLocale("/products/black-soap", locale)}
+                className="px-2.5 py-1 rounded-full bg-white/75 hover:bg-white border border-[#c9b896]/60 transition-colors font-medium hover:text-rose shadow-2xs"
+              >
+                {locale === "fr" ? "Savon Noir" : locale === "ar" ? "الصابون البلدي" : "Black Soap"}
+              </Link>
+              <Link
+                href={localizedPathForLocale("/products/ghassoul-clay", locale)}
+                className="px-2.5 py-1 rounded-full bg-white/75 hover:bg-white border border-[#c9b896]/60 transition-colors font-medium hover:text-rose shadow-2xs"
+              >
+                {locale === "fr" ? "Ghassoul" : locale === "ar" ? "طين الغاسول" : "Ghassoul Clay"}
+              </Link>
+            </div>
             <HeroTrustPoints
               factoryLabel={t.heroTrustFactory}
               batchDocsLabel={t.heroTrustBatchDocs}
@@ -223,25 +265,45 @@ export default function HomePageContent({
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-            {catalogProductCards.map(({ image, title, description }) => (
-              <article
-                key={title}
-                className="flex flex-col h-full rounded-2xl bg-card border border-border shadow-sm overflow-hidden card-lift hover:shadow-md hover:border-rose/20 transition-all duration-200"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  loading="lazy"
-                  className="w-full h-auto object-cover aspect-square"
-                />
-                <div className="p-6 flex flex-col flex-grow">
-                  <p className="text-base font-serif font-semibold text-foreground mb-2">{title}</p>
-                  <p className={`text-sm leading-relaxed flex-grow text-foreground/85 font-light`}>{description}</p>
-                </div>
-              </article>
-            ))}
+            {catalogProductCards.map(({ slug, image, title, description }) => {
+              const productUrl = localizedPathForLocale(`/products/${slug}`, locale);
+              return (
+                <article
+                  key={title}
+                  className="flex flex-col h-full rounded-2xl bg-card border border-border shadow-sm overflow-hidden card-lift hover:shadow-md hover:border-rose/20 transition-all duration-200 group"
+                >
+                  <Link href={productUrl} className="block overflow-hidden">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      loading="lazy"
+                      className="w-full h-auto object-cover aspect-square group-hover:scale-104 transition-transform duration-500"
+                    />
+                  </Link>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <Link href={productUrl}>
+                      <p className="text-base font-serif font-semibold text-foreground mb-2 group-hover:text-rose transition-colors">
+                        {title}
+                      </p>
+                    </Link>
+                    <p className={`text-sm leading-relaxed flex-grow text-foreground/85 font-light mb-4`}>
+                      {description}
+                    </p>
+                    <Link
+                      href={productUrl}
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose hover:underline mt-auto pt-2 border-t border-border/50"
+                    >
+                      <span>
+                        {locale === "fr" ? "Voir les détails" : locale === "ar" ? "عرض التفاصيل" : "View product details"}
+                      </span>
+                      <ArrowRight className={`w-3.5 h-3.5 ${flipArrow ? "rotate-180" : ""}`} />
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
           {businessFacts.carrierOils ? (
             <p className={`mt-8 text-sm max-w-2xl mx-auto ${bodyText}`}>

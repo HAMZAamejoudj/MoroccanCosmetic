@@ -11,7 +11,7 @@ status: "published"
 image: "/blog/packaging-for-natural-oils.webp"
 ---
 
-Nous remplissons et étiquetons des huiles chaque semaine, et nous voyons la même chose : une marque choisit un beau flacon, et le produit en pâtit. Les huiles naturelles comme l'argan et l'huile de pépins de figue de barbarie sont sensibles à la lumière, à l'air et à la chaleur. Le bon conditionnement les protège ; le mauvais raccourcit leur vie et donne une image négligée.
+Nous remplissons et étiquetons des huiles chaque semaine, et nous voyons la même chose : une marque choisit un beau flacon, et le produit en pâtit. Les huiles naturelles comme [l'huile d'argan](/products/argan-oil/) et [l'huile de pépins de figue de barbarie](/products/prickly-pear/) sont sensibles à la lumière, à l'air et à la chaleur. Le bon conditionnement les protège ; le mauvais raccourcit leur vie et donne une image négligée.
 
 ## Règle 1 : protéger l'huile de la lumière
 
@@ -60,8 +60,8 @@ Moins d'air dans le flacon ralentit l'oxydation. Remplir au bon niveau pour la f
 
 ## Choisir les contenances
 
-- **15-30 ml :** huiles visage premium (pépins de figue de barbarie, argan pur visage).
-- **50-100 ml :** argan cheveux et corps, mélanges.
+- **15-30 ml :** huiles visage premium ([huile de pépins de figue de barbarie](/products/prickly-pear/), [argan pur](/products/argan-oil/) visage).
+- **50-100 ml :** [argan](/products/argan-oil/) cheveux et corps, mélanges.
 - **200 ml et plus :** usage professionnel et spa.
 
 Le verre sur mesure demande en général des quantités minimales élevées. Pour un premier lancement, un flacon stock avec une belle étiquette et un étui donne un rendu premium à un minimum bien plus bas.
@@ -75,12 +75,12 @@ Le verre sur mesure demande en général des quantités minimales élevées. Pou
 5. Protection à l'expédition ?
 6. Échantillons testés avec la vraie huile avant production de masse ?
 
-Nous remplissons et étiquetons des huiles sous votre marque — consultez notre [service marque blanche](/private-label-moroccan-cosmetics/) et notre [catalogue produits](/products/).
+Nous remplissons et étiquetons des huiles sous votre marque — consultez notre [Huile d'Argan Marocaine](/products/argan-oil/), notre [Huile de Figue de Barbarie](/products/prickly-pear/), notre [service marque blanche](/private-label-moroccan-cosmetics/) et notre [catalogue produits](/products/).
 
 ## Questions fréquentes
 
 ### Quel est le meilleur flacon pour l'huile d'argan ?
-Verre ambré ou foncé avec compte-gouttes (visage) ou pompe (cheveux et corps) protège le mieux l'huile.
+Verre ambré ou foncé avec compte-gouttes (visage) ou pompe (cheveux et corps) protège le mieux [l'huile d'argan](/products/argan-oil/).
 
 ### Puis-je vendre l'argan en flacons transparents ?
 Oui, mais protégez avec un étui et gardez le stock à l'abri de la lumière, car la lumière raccourcit la durée de vie.

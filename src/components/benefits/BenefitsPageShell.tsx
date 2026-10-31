@@ -2,11 +2,15 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useTranslations } from "@/i18n/useTranslations";
+import { useLocale } from "@/context/LocaleContext";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 import { siteImages } from "@/config/siteImages";
 import {
+  ArrowRight,
   Star,
   ShieldCheck,
   Package,
@@ -19,6 +23,14 @@ import {
   Bath,
   Sparkles,
 } from "lucide-react";
+
+const INGREDIENT_SLUGS = [
+  "argan-oil",
+  "prickly-pear",
+  "rose-water",
+  "black-soap",
+  "nila-powder",
+] as const;
 
 const CORE_BENEFIT_ICONS = [
   Star,
@@ -39,6 +51,8 @@ const INGREDIENT_ICONS = [
 
 export default function BenefitsPageShell() {
   const t = useTranslations("benefits");
+  const locale = useLocale();
+  const flip = locale === "ar";
 
   return (
     <div className="relative min-h-screen organic-texture bg-blush/10 text-foreground transition-colors duration-300">
@@ -159,6 +173,7 @@ export default function BenefitsPageShell() {
 
               <div className="lg:col-span-6 space-y-5">
                 {t.traditionalIngredients.map((item, i) => {
+                  const slug = INGREDIENT_SLUGS[i];
                   return (
                     <div
                       key={i}
@@ -170,6 +185,21 @@ export default function BenefitsPageShell() {
                       <p className="text-sm text-muted-foreground font-light leading-relaxed">
                         {item.desc}
                       </p>
+                      {slug && (
+                        <Link
+                          href={localizedPathForLocale(`/products/${slug}`, locale)}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose hover:underline mt-3 pt-2 border-t border-border/40"
+                        >
+                          <span>
+                            {locale === "fr"
+                              ? "Voir les détails & spécifications"
+                              : locale === "ar"
+                              ? "عرض التفاصيل والمواصفات"
+                              : "View specifications & bulk details"}
+                          </span>
+                          <ArrowRight className={`w-3.5 h-3.5 ${flip ? "rotate-180" : ""}`} />
+                        </Link>
+                      )}
                     </div>
                   );
                 })}
@@ -188,6 +218,33 @@ export default function BenefitsPageShell() {
               <div className="space-y-4 text-base md:text-lg text-muted-foreground font-light leading-relaxed text-justify md:text-center">
                 <p>{t.seoSection.p1}</p>
                 <p>{t.seoSection.p2}</p>
+              </div>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <Link
+                  href={localizedPathForLocale("/products", locale)}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-rose text-white hover:bg-rose-dark font-semibold text-sm transition-all shadow-md shadow-rose/20"
+                >
+                  <span>
+                    {locale === "fr"
+                      ? "Explorer le catalogue produits"
+                      : locale === "ar"
+                      ? "استكشاف كتالوج المنتجات"
+                      : "Explore Products Catalog"}
+                  </span>
+                  <ArrowRight className={`w-4 h-4 ${flip ? "rotate-180" : ""}`} />
+                </Link>
+                <Link
+                  href={localizedPathForLocale("/private-label-moroccan-cosmetics", locale)}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-border bg-card hover:bg-muted text-foreground font-semibold text-sm transition-all shadow-sm"
+                >
+                  <span>
+                    {locale === "fr"
+                      ? "Services Marque Blanche"
+                      : locale === "ar"
+                      ? "خدمات العلامة الخاصة"
+                      : "Turnkey Private Label"}
+                  </span>
+                </Link>
               </div>
             </div>
           </section>

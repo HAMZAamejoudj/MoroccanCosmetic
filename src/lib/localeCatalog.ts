@@ -21,6 +21,7 @@ export function isLocalizedPath(logicalPath: string): boolean {
   const normalized = logicalPath === "" ? "/" : logicalPath.replace(/\/$/, "") || "/";
   if (FULL_LOCALE_PATHS.has(normalized)) return true;
   if (normalized.startsWith("/blog/") && normalized.length > "/blog/".length) return true;
+  if (normalized.startsWith("/products/") && normalized.length > "/products/".length) return true;
   return false;
 }
 

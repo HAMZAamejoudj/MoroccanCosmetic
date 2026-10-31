@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/how-moroccan-black-soap-is-made.webp"
 ---
 
-Moroccan black soap - savon beldi - doesn't look like any other soap. It's soft, dark, almost like a paste, and it's the first thing that touches your skin in a traditional hammam. We make it in our Marrakech workshop, so this is not a theory article: it's how the product goes from raw ingredients to the jar, and what we've learned about doing it well.
+Moroccan black soap - [savon beldi](/products/black-soap/) - doesn't look like any other soap. It's soft, dark, almost like a paste, and it's the first thing that touches your skin in a traditional hammam. We make it in our Marrakech workshop, so this is not a theory article: it's how the product goes from raw ingredients to the jar, and what we've learned about doing it well.
 
 ## What Moroccan Black Soap Actually Is
 
@@ -30,7 +30,7 @@ Its INCI name usually starts with **Potassium Olivate**, followed by water and, 
 - **Olive oil and olive paste.** Traditionally from dark, ripe olives. They give the soap its colour and its rich texture.
 - **Potassium hydroxide solution.** This is what turns oil into soap (saponification). It's handled with care, because it is caustic before the reaction is complete.
 - **Water.**
-- **Optional additions** for scented versions: eucalyptus, argan oil, rose, or nila.
+- **Optional additions** for scented versions: eucalyptus, [argan oil](/products/argan-oil/), [rose water](/products/rose-water/), or [blue nila powder](/products/nila-powder/).
 
 ## Step by Step: How We Make It
 
@@ -49,7 +49,7 @@ The soap is left to rest so the reaction can finish and the texture can settle. 
 Before packing, we check the texture, colour and smell of each batch, and that it rinses cleanly. Like all true soaps, black soap is alkaline - that's normal - but a well-made batch should not leave the skin burning or tight.
 
 ### 5. Adding scents (optional)
-For eucalyptus, argan, rose or nila versions, the additions are mixed in at the end, so they're spread evenly.
+For eucalyptus, [argan oil](/products/argan-oil/), rose or [nila](/products/nila-powder/) versions, the additions are mixed in at the end, so they're spread evenly.
 
 ### 6. Packing
 The soap is filled into tubs for professional use or jars for retail, sealed and labelled with the batch number.
@@ -68,7 +68,7 @@ The soap is filled into tubs for professional use or jars for retail, sealed and
 
 ## How It's Used
 
-In the hammam, black soap is spread on warm, damp skin and left for a few minutes. It softens the top layer of skin so the kessa glove can exfoliate it. After rinsing, people usually continue with ghassoul clay, rose water and argan oil.
+In the hammam, black soap is spread on warm, damp skin and left for a few minutes. It softens the top layer of skin so the kessa glove can exfoliate it. After rinsing, people usually continue with [ghassoul clay](/products/ghassoul-clay/), [rose water](/products/rose-water/) and [pure argan oil](/products/argan-oil/).
 
 ## Buying Black Soap in Bulk
 
@@ -80,7 +80,7 @@ If you're a spa, a distributor or a brand, ask your supplier:
 4. **How consistent is it?** Ask for two samples from different batches and compare them.
 5. **How should it be stored?** Closed container, away from heat and humidity.
 
-We make our black soap in our own workshop and supply it in bulk tubs, retail jars or under your own label. See our [products catalog](/products/) or our [private label service](/private-label-moroccan-cosmetics/).
+We make our black soap in our own workshop and supply it in bulk tubs, retail jars or under your own label. See our [Moroccan Black Soap product page](/products/black-soap/), [products catalog](/products/) or our [turnkey private label service](/private-label-moroccan-cosmetics/).
 
 ## FAQ
 

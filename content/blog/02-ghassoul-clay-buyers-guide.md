@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/ghassoul-clay-bulk-buying-guide.webp"
 ---
 
-Ghassoul - also written rhassoul or rassoul - is one of the few cosmetic ingredients that comes from a single country. It's a natural clay mined in Morocco, used for generations to wash hair and skin without soap. For brands and spas it's an easy product to love: simple, natural, and with a strong story.
+[Atlas Mountain Ghassoul clay](/products/ghassoul-clay/) - also written rhassoul or rassoul - is one of the few cosmetic ingredients that comes from a single country. It's a natural clay mined in Morocco, used for generations to wash hair and skin without soap. For brands and spas it's an easy product to love: simple, natural, and with a strong story.
 
 It's also an ingredient where quality varies a lot. This guide covers what buyers should know before ordering in bulk.
 
@@ -65,9 +65,9 @@ Many websites claim ghassoul "detoxes the body" or "removes toxins". Those are n
 
 ## How It's Used
 
-- **Face mask:** mix 1-2 tablespoons with water or rose water into a smooth paste, apply, leave a few minutes, rinse before it dries completely.
+- **Face mask:** mix 1-2 tablespoons with water or [rose water](/products/rose-water/) into a smooth paste, apply, leave a few minutes, rinse before it dries completely.
 - **Hair wash:** a thinner paste massaged into wet hair and scalp, then rinsed thoroughly.
-- **Hammam body mask:** after black soap and kessa exfoliation.
+- **Hammam body mask:** after [Moroccan black soap](/products/black-soap/) and kessa exfoliation.
 
 Always mix with a non-metal bowl and spatula - it's a traditional habit that many spas keep.
 
@@ -79,7 +79,7 @@ Always mix with a non-metal bowl and spatula - it's a traditional habit that man
 4. Which **bulk formats** are available (bag sizes, lined bags, cartons)?
 5. What are the **storage** recommendations and shelf life?
 
-We supply ghassoul in bulk and under private label - see our [products catalog](/products/) and [private label service](/private-label-moroccan-cosmetics/).
+We supply ghassoul in bulk and under private label - see our [Ghassoul Clay product page](/products/ghassoul-clay/), [products catalog](/products/) and [turnkey private label service](/private-label-moroccan-cosmetics/).
 
 ## FAQ
 
@@ -93,6 +93,6 @@ Yes. It's traditionally used as a natural hair wash. Rinse thoroughly.
 Dry powder keeps well when stored closed and dry. Ready-to-use pastes have a shorter shelf life; follow the label.
 
 ### What should I mix ghassoul with?
-Water or a floral water such as rose water or orange blossom water.
+Water or a floral water such as [rose water](/products/rose-water/) or [orange blossom water](/products/orange-blossom-water/).
 
 [Request a Quote]

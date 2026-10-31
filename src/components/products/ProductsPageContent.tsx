@@ -13,8 +13,10 @@ import {
   Truck,
 } from "lucide-react";
 import { useTranslations } from "@/i18n/useTranslations";
+import { useLocale } from "@/context/LocaleContext";
 import { getWhatsAppUrl } from "@/config/siteConfig";
 import { homeImages } from "@/components/home/homeImages";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 
 const PRODUCT_IMAGES: Record<string, string> = {
   "argan-oil": homeImages.arganOil.src,
@@ -32,7 +34,16 @@ const WHY_ICONS = [HandHeart, BadgeCheck, Package, ClipboardList, Truck];
 
 export default function ProductsPageContent() {
   const t = useTranslations("products");
+  const locale = useLocale();
   const whatsappBase = getWhatsAppUrl();
+  const flip = locale === "ar";
+
+  const viewDetailsText =
+    locale === "fr"
+      ? "Voir les détails"
+      : locale === "ar"
+      ? "عرض التفاصيل"
+      : "View Specifications";
 
   return (
     <main className="pt-20 md:pt-24">
@@ -51,13 +62,14 @@ export default function ProductsPageContent() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.items.map((p) => {
               const image = PRODUCT_IMAGES[p.id];
+              const productUrl = localizedPathForLocale(`/products/${p.id}`, locale);
               const waLink = `${whatsappBase}?text=${encodeURIComponent(p.waMessage)}`;
               return (
                 <div
                   key={p.id}
                   className="group flex flex-col h-full bg-card rounded-3xl border border-border overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="relative aspect-square w-full overflow-hidden bg-muted">
+                  <Link href={productUrl} className="relative aspect-square w-full overflow-hidden bg-muted block">
                     {image ? (
                       <Image
                         src={image}
@@ -67,11 +79,13 @@ export default function ProductsPageContent() {
                         className="object-cover group-hover:scale-103 transition-transform duration-700"
                       />
                     ) : null}
-                  </div>
+                  </Link>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-xl font-serif font-semibold text-foreground mb-3 group-hover:text-rose transition-colors duration-200">
-                      {p.title}
-                    </h3>
+                    <Link href={productUrl}>
+                      <h3 className="text-xl font-serif font-semibold text-foreground mb-3 group-hover:text-rose transition-colors duration-200">
+                        {p.title}
+                      </h3>
+                    </Link>
                     <p className="text-sm text-muted-foreground font-light leading-relaxed mb-6 flex-grow">
                       {p.description}
                     </p>
@@ -83,15 +97,23 @@ export default function ProductsPageContent() {
                         </li>
                       ))}
                     </ul>
-                    <a
-                      href={waLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 h-11 rounded-xl border border-rose/30 bg-rose/5 text-rose hover:bg-rose hover:text-white font-semibold transition-all duration-300 text-sm"
-                    >
-                      {t.inquireCta}
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </a>
+                    <div className="flex flex-col gap-2.5">
+                      <Link
+                        href={productUrl}
+                        className="w-full inline-flex items-center justify-center gap-2 h-11 rounded-xl bg-rose/10 hover:bg-rose hover:text-white text-rose font-semibold transition-all duration-300 text-sm"
+                      >
+                        {viewDetailsText}
+                        <ArrowRight className={`w-3.5 h-3.5 ${flip ? "rotate-180" : ""}`} />
+                      </Link>
+                      <a
+                        href={waLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 h-11 rounded-xl border border-border bg-background hover:bg-muted text-foreground/85 font-semibold transition-all duration-300 text-sm"
+                      >
+                        {t.inquireCta}
+                      </a>
+                    </div>
                   </div>
                 </div>
               );
@@ -146,7 +168,12 @@ export default function ProductsPageContent() {
           </div>
           <p className="mt-16 text-center text-base text-foreground/85">
             {t.faqStillQuestions}{" "}
-            <Link href="/contact/" className="text-rose font-semibold hover:underline">{t.faqContact}</Link>
+            <Link
+              href={localizedPathForLocale("/contact", locale)}
+              className="text-rose font-semibold hover:underline"
+            >
+              {t.faqContact}
+            </Link>
           </p>
         </div>
       </section>

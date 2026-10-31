@@ -39,7 +39,7 @@ export default function BlogPostHeader({
           <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/50" />
           <Link href="/blog/" className="hover:text-rose transition-colors">{tHome.navBlog}</Link>
           <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/50" />
-          <span className="text-foreground font-medium truncate max-w-[240px] sm:max-w-xs">{title}</span>
+          <span className="text-foreground font-medium">{title}</span>
         </nav>
       </div>
 

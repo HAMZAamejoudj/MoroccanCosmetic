@@ -12,7 +12,7 @@ status: "published"
 image: "/blog/what-is-blue-nila-powder.webp"
 ---
 
-Blue nila has become a social-media star: a deep blue powder from Morocco, mixed into masks and black soap. It's also one of the most misunderstood ingredients we sell. Buyers ask what it is, whether it "whitens" skin, and why two "nila" powders can look completely different. Here are honest answers.
+[Blue nila powder](/products/nila-powder/) has become a social-media star: a deep blue powder from Morocco, mixed into masks and [black soap](/products/black-soap/). It's also one of the most misunderstood ingredients we sell. Buyers ask what it is, whether it "whitens" skin, and why two "nila" powders can look completely different. Here are honest answers.
 
 ## What Nila Is
 
@@ -24,8 +24,8 @@ Because "nila" is a traditional name rather than a regulated term, products sold
 
 ## How It's Traditionally Used
 
-- **Mixed into black soap** before the hammam.
-- **In masks**, combined with water, rose water, yoghurt or clay.
+- **Mixed into [Moroccan black soap](/products/black-soap/)** before the hammam.
+- **In masks**, combined with water, [rose water](/products/rose-water/), yoghurt or [ghassoul clay](/products/ghassoul-clay/).
 - **In body scrubs** and hammam rituals for brides.
 
 The colour stays on the skin briefly and rinses off.
@@ -62,7 +62,7 @@ Because nila can sell at a premium, the market includes powders coloured with sy
 
 Keep it closed, dry and away from light. Like all plant powders, humidity is the main risk.
 
-We supply nila in bulk and in private label packaging - see our [products catalog](/products/) and [private label service](/private-label-moroccan-cosmetics/).
+We supply authentic nila in bulk and in private label packaging - see our [Blue Nila Powder product page](/products/nila-powder/), [products catalog](/products/) and [turnkey private label service](/private-label-moroccan-cosmetics/).
 
 ## FAQ
 
@@ -76,6 +76,6 @@ We don't make that claim. Evidence is limited, and skin-lightening claims are re
 It can tint the skin briefly. It should rinse off with water and soap.
 
 ### Can nila be mixed with black soap?
-Yes, that's one of its most traditional uses.
+Yes, mixing with [Moroccan black soap](/products/black-soap/) is one of its most authentic and traditional uses.
 
 [Request a Quote]

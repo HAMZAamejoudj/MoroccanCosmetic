@@ -11,7 +11,7 @@ status: "published"
 image: "/blog/orange-blossom-water-vs-rose-water.webp"
 ---
 
-Dans une maison marocaine, vous trouverez souvent les deux : une bouteille d'eau de rose dans la salle de bain et une d'eau de fleur d'oranger dans la cuisine — ou l'inverse. Les deux sont distillées à partir de fleurs, utilisées sur la peau, et plébiscitées par les marques de beauté naturelle. Mais elles ne sont pas interchangeables.
+Dans une maison marocaine, vous trouverez souvent les deux : une bouteille [d'eau de rose](/products/rose-water/) dans la salle de bain et une [d'eau de fleur d'oranger](/products/orange-blossom-water/) dans la cuisine — ou l'inverse. Les deux sont distillées à partir de fleurs, utilisées sur la peau, et plébiscitées par les marques de beauté naturelle. Mais elles ne sont pas interchangeables.
 
 ## Les bases
 
@@ -27,18 +27,18 @@ Les deux sont des **hydrolats** : l'eau parfumée recueillie lors de la distilla
 
 ## Eau de rose : le tonique classique
 
-L'eau de rose est l'eau florale que la plupart des clients connaissent déjà. Elle s'utilise :
+L'[eau de rose marocaine](/products/rose-water/) est l'eau florale que la plupart des clients connaissent déjà. Elle s'utilise :
 
 - comme tonique après le nettoyage,
 - comme brume rafraîchissante dans la journée,
-- pour mélanger l'argile ghassoul en masque,
+- pour mélanger [l'argile ghassoul](/products/ghassoul-clay/) en masque,
 - comme base dans toniques, brumes et crèmes.
 
 Son parfum est doux et familier, ce qui facilite la vente sur presque tous les marchés.
 
 ## Eau de fleur d'oranger : la sous-estimée
 
-L'eau de fleur d'oranger (appelée « zhar » au Maroc) s'utilise en cuisine et en soins. En cosmétique, elle convient bien comme :
+L'[eau de fleur d'oranger](/products/orange-blossom-water/) (appelée « zhar » au Maroc) s'utilise en cuisine et en soins. En cosmétique, elle convient bien comme :
 
 - brume corps et cheveux,
 - tonique visage léger et frais,
@@ -50,8 +50,8 @@ Elle est moins courante sur les rayons internationaux que l'eau de rose — ce q
 
 ## Laquelle choisir ?
 
-- **Pour une ligne soin classique ou un premier produit :** l'eau de rose. Elle est reconnue partout.
-- **Pour un parfum plus distinctif et frais ou une brume corps/cheveux :** l'eau de fleur d'oranger.
+- **Pour une ligne soin classique ou un premier produit :** [l'eau de rose](/products/rose-water/). Elle est reconnue partout.
+- **Pour un parfum plus distinctif et frais ou une brume corps/cheveux :** [l'eau de fleur d'oranger](/products/orange-blossom-water/).
 - **Pour une gamme hammam ou cadeau :** les deux — les clients apprécient le choix.
 - **Pour des produits hommes ou unisexes :** la fleur d'oranger convient souvent mieux que la rose.
 
@@ -76,7 +76,7 @@ Stocker à l'écart de la chaleur et de la lumière. En vrac, demandez des conte
 
 Les eaux florales sont en général fournies en 5 L, 25 L ou plus, et en flacons spray pour marque blanche. Planifiez vos volumes autour de la récolte printanière, et gardez les contenants ouverts fermés et au frais.
 
-Nous fournissons les deux eaux en vrac et en marque blanche — consultez notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
+Nous fournissons les deux eaux en vrac et en marque blanche — consultez notre fiche [Eau de Rose](/products/rose-water/), notre fiche [Eau de Fleur d'Oranger](/products/orange-blossom-water/), notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
 
 ## Questions fréquentes
 
@@ -90,6 +90,6 @@ Ni l'une ni l'autre n'est « meilleure » ; parfums et usages diffèrent. L'eau 
 Les produits à base d'eau peuvent se contaminer une fois ouverts. Demandez comment le produit est conservé et respectez sa durée de vie.
 
 ### Puis-je mélanger le ghassoul avec l'eau de fleur d'oranger ?
-Oui. C'est une alternative agréable à l'eau de rose pour les masques à l'argile.
+Oui. C'est une alternative agréable à [l'eau de rose](/products/rose-water/) pour les masques [d'argile ghassoul](/products/ghassoul-clay/).
 
 [Demander un devis]

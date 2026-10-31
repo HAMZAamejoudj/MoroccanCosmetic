@@ -67,6 +67,8 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import type enPrivateLabelPage from "@/i18n/locales/en/privateLabelPage.json";
 
 import { useTranslations } from "@/i18n/useTranslations";
+import { useLocale } from "@/context/LocaleContext";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
 
 import { PAGE_CONTAINER } from "@/lib/pageContainer";
 
@@ -148,6 +150,7 @@ const TIMELINE_ICONS: LucideIcon[] = [
 
 interface ManufactureCategory {
 
+  key: (typeof MANUFACTURE_CATEGORY_KEYS)[number];
   title: string;
 
   subtitle: string;
@@ -165,6 +168,15 @@ interface ManufactureCategory {
 }
 
 
+
+const CATEGORY_PRODUCT_SLUGS: Record<(typeof MANUFACTURE_CATEGORY_KEYS)[number], string> = {
+  pureOils: "argan-oil",
+  blackSoap: "black-soap",
+  ghassoulClay: "ghassoul-clay",
+  floralWaters: "rose-water",
+  botanicalPowders: "nila-powder",
+  hammamKits: "",
+};
 
 function buildManufactureCategories(t: typeof enPrivateLabelPage): ManufactureCategory[] {
 
@@ -184,6 +196,7 @@ function buildManufactureCategories(t: typeof enPrivateLabelPage): ManufactureCa
 
     return {
 
+      key,
       title: cat.title,
 
       subtitle: cat.subtitle,
@@ -209,6 +222,8 @@ function buildManufactureCategories(t: typeof enPrivateLabelPage): ManufactureCa
 function PrivateLabelCtaButtons({ className }: { className?: string }) {
 
   const t = useTranslations("privateLabelPage");
+  const locale = useLocale();
+  const flip = locale === "ar";
 
   const whatsappUrl = `${getWhatsAppUrl()}?text=${encodeURIComponent(t.whatsappMessage)}`;
 
@@ -218,7 +233,7 @@ function PrivateLabelCtaButtons({ className }: { className?: string }) {
 
       <Link
 
-        href="/contact/"
+        href={localizedPathForLocale("/contact", locale)}
 
         className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-rose text-white hover:bg-rose-dark font-semibold text-sm shadow-md hover:shadow-lg hover:shadow-rose/25 transition-all duration-300 btn-glow"
 
@@ -259,6 +274,8 @@ function PrivateLabelCtaButtons({ className }: { className?: string }) {
 export default function PrivateLabelPageContent() {
 
   const t = useTranslations("privateLabelPage");
+  const locale = useLocale();
+  const flip = locale === "ar";
 
   const tHome = useTranslations("home");
 
@@ -462,7 +479,7 @@ export default function PrivateLabelPageContent() {
 
             items={[
 
-              { label: tHome.navHome, href: "/" },
+              { label: tHome.navHome, href: localizedPathForLocale("/", locale) },
 
               { label: tHome.navPrivateLabel },
 
@@ -797,12 +814,42 @@ export default function PrivateLabelPageContent() {
                           </div>
 
                           <span>{opt}</span>
-
                         </li>
-
                       ))}
-
                     </ul>
+                    {CATEGORY_PRODUCT_SLUGS[cat.key] ? (
+                      <div className="mt-4 pt-3 border-t border-border/40">
+                        <Link
+                          href={localizedPathForLocale(`/products/${CATEGORY_PRODUCT_SLUGS[cat.key]}`, locale)}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose hover:underline"
+                        >
+                          <span>
+                            {locale === "fr"
+                              ? "Voir les spécifications vrac"
+                              : locale === "ar"
+                              ? "عرض مواصفات المنتج بالجملة"
+                              : "View bulk ingredient specs"}
+                          </span>
+                          <ArrowRight className={`w-3.5 h-3.5 ${flip ? "rotate-180" : ""}`} />
+                        </Link>
+                      </div>
+                    ) : (
+                      <div className="mt-4 pt-3 border-t border-border/40">
+                        <Link
+                          href={localizedPathForLocale("/products", locale)}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose hover:underline"
+                        >
+                          <span>
+                            {locale === "fr"
+                              ? "Explorer le catalogue produits"
+                              : locale === "ar"
+                              ? "استكشاف منتجات الكتالوج"
+                              : "Explore full products catalog"}
+                          </span>
+                          <ArrowRight className={`w-3.5 h-3.5 ${flip ? "rotate-180" : ""}`} />
+                        </Link>
+                      </div>
+                    )}
 
                   </div>
 
@@ -822,7 +869,7 @@ export default function PrivateLabelPageContent() {
 
               <span>{t.manufacture.ctaQuestion}</span>
 
-              <Link href="/contact/" className="text-rose font-semibold hover:underline">
+              <Link href={localizedPathForLocale("/contact", locale)} className="text-rose font-semibold hover:underline">
 
                 {t.manufacture.ctaLink}
 

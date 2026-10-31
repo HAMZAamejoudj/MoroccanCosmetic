@@ -11,7 +11,7 @@ status: "published"
 image: "/blog/what-is-blue-nila-powder.webp"
 ---
 
-La nila bleue est devenue une star des réseaux sociaux : une poudre bleu profond du Maroc, mélangée aux masques et au savon noir. C'est aussi l'un des ingrédients que nous vendons le plus mal compris. Les acheteurs demandent ce que c'est, si elle « blanchit » la peau, et pourquoi deux poudres « nila » peuvent paraître totalement différentes. Voici des réponses honnêtes.
+La [poudre de nila bleue](/products/nila-powder/) est devenue une star des réseaux sociaux : une poudre bleu profond du Maroc, mélangée aux masques et au [savon noir](/products/black-soap/). C'est aussi l'un des ingrédients que nous vendons le plus mal compris. Les acheteurs demandent ce que c'est, si elle « blanchit » la peau, et pourquoi deux poudres « nila » peuvent paraître totalement différentes. Voici des réponses honnêtes.
 
 ## Ce qu'est la nila
 
@@ -21,8 +21,8 @@ Comme « nila » est un nom traditionnel plutôt qu'un terme réglementé, les p
 
 ## Usage traditionnel
 
-- **Mélangée au savon noir** avant le hammam.
-- **Dans les masques**, avec eau, eau de rose, yaourt ou argile.
+- **Mélangée au [savon noir marocain](/products/black-soap/)** avant le hammam.
+- **Dans les masques**, avec eau, [eau de rose](/products/rose-water/), yaourt ou [argile ghassoul](/products/ghassoul-clay/).
 - **Dans les gommages corps** et rituels hammam pour les mariées.
 
 La couleur reste brièvement sur la peau et part au rinçage.
@@ -59,7 +59,7 @@ Comme la nila peut se vendre à prix élevé, le marché comprend des poudres co
 
 Garder fermé, sec et à l'écart de la lumière. Comme toutes les poudres végétales, l'humidité est le principal risque.
 
-Nous fournissons la nila en vrac et en conditionnement marque blanche — consultez notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
+Nous fournissons la nila en vrac et en conditionnement marque blanche — consultez notre fiche produit [Poudre de Nila Bleu](/products/nila-powder/), notre [catalogue produits](/products/) et notre [service marque blanche](/private-label-moroccan-cosmetics/).
 
 ## Questions fréquentes
 
@@ -73,6 +73,6 @@ Nous ne faisons pas cette allégation. Les preuves sont limitées, et les allég
 Elle peut colorer la peau brièvement. Elle doit partir à l'eau et au savon.
 
 ### Peut-on mélanger la nila au savon noir ?
-Oui, c'est l'un de ses usages les plus traditionnels.
+Oui, le mélange avec le [savon noir](/products/black-soap/) est l'un de ses usages les plus traditionnels.
 
 [Demander un devis]

@@ -20,6 +20,9 @@ import { businessFacts } from "@/config/businessFacts";
 import { getWhatsAppUrl } from "@/config/siteConfig";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { useTranslations } from "@/i18n/useTranslations";
+import { useLocale } from "@/context/LocaleContext";
+import { localizedPathForLocale } from "@/lib/localeCatalog";
+import { ArrowRight } from "lucide-react";
 import AboutHeroVisual from "./AboutHeroVisual";
 import { aboutImages } from "./aboutImages";
 import { getAboutFaqItems } from "./aboutFaq";
@@ -34,6 +37,7 @@ const expectationCard =
 const regionCard =
   "flex flex-row h-full gap-4 items-start rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-200 card-lift hover:shadow-md";
 
+const REGION_PRODUCTS = ["argan-oil", "ghassoul-clay", "rose-water"] as const;
 const REGION_ICONS: LucideIcon[] = [Droplet, Mountain, Sun];
 const EXPECTATION_ICONS: LucideIcon[] = [MessageCircle, FileText, Package, UserCheck];
 
@@ -98,6 +102,8 @@ function PageShell({
 export default function AboutPageContent() {
   const t = useTranslations("about");
   const tHome = useTranslations("home");
+  const locale = useLocale();
+  const flip = locale === "ar";
   const faqItems = getAboutFaqItems(t);
   const whatsappUrl = getWhatsAppUrl();
   const processes = t.facilityProcesses;
@@ -110,7 +116,7 @@ export default function AboutPageContent() {
       <PageShell variant="cream">
         <Breadcrumbs
           items={[
-            { label: tHome.navHome, href: "/" },
+            { label: tHome.navHome, href: localizedPathForLocale("/", locale) },
             { label: tHome.navAbout },
           ]}
         />
@@ -121,9 +127,32 @@ export default function AboutPageContent() {
               {t.heroTitle}
             </h1>
             <p className={bodyText}>{t.heroIntro}</p>
+            <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+              <span>{t.heroLinksPrefix || "Explore our"}</span>
+              <Link
+                href={localizedPathForLocale("/products", locale)}
+                className="font-medium text-rose hover:underline"
+              >
+                {t.linkProducts || "Products"}
+              </Link>
+              <span>•</span>
+              <Link
+                href={localizedPathForLocale("/private-label-moroccan-cosmetics", locale)}
+                className="font-medium text-rose hover:underline"
+              >
+                {t.linkPrivateLabel || "Private Label"}
+              </Link>
+              <span>•</span>
+              <Link
+                href={localizedPathForLocale("/benefits", locale)}
+                className="font-medium text-rose hover:underline"
+              >
+                {t.linkBenefits || "Benefits"}
+              </Link>
+            </div>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <Link
-                href="/contact/"
+                href={localizedPathForLocale("/contact", locale)}
                 className="inline-flex w-full sm:w-auto items-center justify-center h-12 px-8 rounded-full bg-rose text-white hover:bg-rose-dark font-semibold shadow-md hover:shadow-lg hover:shadow-rose/25 transition-all duration-200 btn-glow"
               >
                 {t.ctaContact}
@@ -165,6 +194,23 @@ export default function AboutPageContent() {
                       <p className="text-base text-foreground/90 font-light leading-relaxed">
                         {region.line}
                       </p>
+
+                      {REGION_PRODUCTS[idx] && (
+                        <Link
+                          href={localizedPathForLocale(`/products/${REGION_PRODUCTS[idx]}`, locale)}
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-rose hover:underline mt-2"
+                        >
+                          <span>
+                            {locale === "fr"
+                              ? "Explorer ce produit"
+                              : locale === "ar"
+                              ? "استكشاف هذا المنتج"
+                              : "Explore product"}
+                          </span>
+                          <ArrowRight className={`w-3.5 h-3.5 ${flip ? "rotate-180" : ""}`} />
+                        </Link>
+                      )}
+
                     </div>
                   </article>
                 );
@@ -285,7 +331,7 @@ export default function AboutPageContent() {
 
             <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto justify-center">
               <Link
-                href="/contact/"
+                href={localizedPathForLocale("/contact", locale)}
                 className="inline-flex items-center justify-center gap-2 h-12 px-7 rounded-full bg-rose text-white hover:bg-rose-dark font-semibold text-sm shadow-md hover:shadow-lg hover:shadow-rose/25 transition-all duration-300 btn-glow"
               >
                 <span>{t.ctaContact}</span>
@@ -331,7 +377,7 @@ export default function AboutPageContent() {
         </div>
         <p className="mt-10 text-center text-base text-foreground/90">
           {t.faqStillQuestions}{" "}
-          <Link href="/contact/" className="text-rose font-semibold hover:underline">
+          <Link href={localizedPathForLocale("/contact", locale)} className="text-rose font-semibold hover:underline">
             {t.faqContactLink}
           </Link>
         </p>
